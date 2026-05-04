@@ -1,0 +1,114 @@
+{
+  "common": {
+    "available": "Disponible para nuevos proyectos",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "cv": "CV",
+    "email": "Email",
+    "socials": "Redes",
+    "viewAllProjects": "Ver todos los proyectos",
+    "cookingMore": "Cocinando más...",
+    "builtBy": "Construido por"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "bio": "Construyendo software de punta a punta desde",
+    "bio2": "Mi enfoque integra el diseño estratégico de bases de datos, el desarrollo de backend bajo arquitecturas limpias y una experiencia de usuario reactiva en frontend, todo articulado mediante flujos de integración y entrega continua (CI/CD)."
+  },
+  "aboutMe": {
+    "title": "Sobre mí",
+    "caption": "La versión corta.",
+    "p1": "Soy Martin, desarrollador de software full-stack enfocado en crear soluciones integrales. Mi especialidad es conectar el diseño de bases de datos con arquitecturas de backend limpias y frontend reactivo.",
+    "p2": "Trabajo con flujos CI/CD automatizados que garantizan calidad y velocidad de entrega. Desde la planificación hasta el deployment, me enfoco en construir software escalable y mantenible.",
+    "p3": "Me apasiona transformar ideas complejas en productos funcionales, siempre buscando el equilibrio entre performance, usabilidad y buenas prácticas de desarrollo."
+  },
+  "navigation": {
+    "about": "Sobre mí",
+    "work": "Trabajo",
+    "skills": "Tecnologías",
+    "projects": "Proyectos",
+    "education": "Educación",
+    "contact": "Contacto",
+    "menu": "MENÚ",
+    "close": "CERRAR"
+  },
+  "experience": {
+    "title": "Experiencia Profesional",
+    "caption": "Dónde he trabajado.",
+    "entries": {
+      "freelance": {
+        "date": "2024 → Hoy",
+        "role": "Desarrollador Full Stack",
+        "description": "Desarrollo de landing pages y aplicaciones web from scratch con HTML5, CSS3, JavaScript y TypeScript. Angular (PrimeNG) y React hasta el despliegue final en producción.",
+        "bullets": [
+          "Desarrollo AI-First: Implementación de flujos de trabajo con Claude Code.",
+          "Desarrollo Backend: Trabajo con .NET y Node.js; diseño de arquitecturas de persistencia híbridas utilizando SQL Server, PostgreSQL, MySQL y MongoDB.",
+          "Desarrollo Frontend: Desarrollo de interfaces reactivas de alta performance sobre Angular (PrimeNG) y React.",
+          "DevOps y Despliegues: Contenerización con Docker y orquestación de despliegues automatizados mediante GitHub Actions (CI/CD)."
+        ]
+      },
+      "encodelabs": {
+        "date": "Ago 2024 → Dic 2025",
+        "role": "Full Stack Developer & QA Engineer",
+        "description": "Desarrollo full-stack y aseguramiento de calidad en Encodelabs, contribuyendo a aplicaciones web escalables y garantizando la calidad del producto mediante testing manual.",
+        "bullets": [
+          "Desarrollo Frontend: Implementación de interfaces de usuario escalables y reactivas utilizando Angular, PrimeNG y TailwindCSS, asegurando una experiencia de usuario (UX) fluida y profesional.",
+          "Integración de Sistemas: Consumo y vinculación de APIs RESTful con el frontend, garantizando la correcta comunicación de datos y el manejo eficiente de estados en la aplicación.",
+          "Garantía de Calidad (QA): Ejecución del ciclo completo de testing para el Vivero productivo municipal Quilino, desde el diseño estratégico de casos de prueba hasta el reporte y seguimiento de defectos en Jira, elevando los estándares de estabilidad del producto.",
+          "Arquitectura y Buenas Prácticas: Aplicación de metodologías ágiles para la entrega de componentes funcionales, colaborando en un entorno técnico de alto rendimiento."
+        ]
+      }
+    }
+  },
+  "techStack": {
+    "title": "Stack Tecnológico",
+    "caption": "Las herramientas que utilizo para construir productos digitales."
+  },
+  "projects": {
+    "title": "Proyectos Seleccionados",
+    "items": {
+      "snapshelf": {
+        "title": "SnapShelf",
+        "description": "Rastreador de comestibles móvil con escaneo de artículos impulsado por IA, recordatorios de vencimiento y un flujo de trabajo basado en confianza para reducir el desperdicio de alimentos."
+      },
+      "bkshoot": {
+        "title": "BK-Shoot",
+        "description": "Dispositivo IoT de bajo costo que detecta encestes/fallos en baloncesto en tiempo real usando fusión de sensores IR + vibración."
+      },
+      "cnn": {
+        "title": "Comparación de Arquitecturas CNN",
+        "description": "Evalué tres arquitecturas CNN en más de 120K imágenes de alimentos, demostrando que EfficientNetB0 iguala a ResNet-50 siendo 5.9x más pequeño."
+      },
+      "portfolio": {
+        "title": "Portfolio Web Personal",
+        "description": "Portfolio de una sola página con navegación personalizada de página completa, gradientes reactivos al cursor y puntuaciones Lighthouse 95+."
+      },
+      "scraper": {
+        "title": "Wikipedia Scraper",
+        "description": "Crawler asíncrono con 100 trabajadores concurrentes, deduplicación de URLs O(1) y un deadline global de 20 segundos."
+      },
+      "library": {
+        "title": "Sistema de Biblioteca Universitaria",
+        "description": "App de consola Java MVC con jerarquías de herencia, reglas de préstamo polimórficas y persistencia CSV personalizada."
+      }
+    }
+  },
+  "education": {
+    "title": "Educación",
+    "caption": "Antecedentes académicos.",
+    "aru": {
+      "description": "Último año de BSc, graduación esperada mayo 2026.",
+      "bullets": [
+        "Primera clase con honores predicha (1st).",
+        "Atleta becado de baloncesto.",
+        "Tesis \"Evaluación Comparativa de Pipelines de CV para Reconocimiento de Alimentos\": comparé YOLOv8s fine-tuned, un híbrido YOLO + EfficientNetB0 y GPT-5.2 en una tarea de 14 clases de productos, 4 condiciones de imagen y 1,440 inferencias. El pipeline ganador se integró en una app full-stack."
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "¿Tienes un proyecto en mente?",
+    "description": "Estoy disponible para nuevos proyectos. Envíame un correo y hablemos.",
+    "getInTouch": "Ponte en contacto."
+  }
+}

@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   Base palette mirrors syedsubhan.in:
+   - Light = white + gray-900 + blue-600 accent
+   - Dark  = pure black + #111 surfaces + white text + blue-500 accent
+   We use CSS vars (rgb triplets) so Tailwind alpha modifiers work,
+   AND we toggle via the `.dark` class on <html> (Tailwind native).
+   ============================================================ */
+
+:root {
+  /* Light mode — Brutalist Skyline palette */
+  --background: 247 255 247;              /* #F7FFF7 near-white mint */
+  --background-soft: 237 243 237;         /* slightly deeper mint for cards */
+  --foreground: 34 34 59;                 /* #22223B deep navy */
+  --foreground-muted: 74 78 105;          /* #4A4E69 muted indigo */
+  --foreground-faint: 154 140 152;        /* #9A8C98 dusty mauve */
+  --border: 201 203 160;                  /* #C9CBA0 sage green (subtle) */
+  --border-soft: 227 229 200;             /* lighter sage for subtle dividers */
+  --accent: 74 78 105;                    /* #4A4E69 muted indigo as accent */
+
+  --expo-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dark {
+  --background: 0 0 0;
+  --background-soft: 17 17 17;           /* #111 - Subhan's canonical dark card */
+  --foreground: 255 255 255;
+  --foreground-muted: 209 213 219;       /* gray-300 */
+  --foreground-faint: 156 163 175;       /* gray-400 */
+  --border: 38 38 38;
+  --border-soft: 23 23 23;
+  --accent: 59 130 246;                  /* blue-500 */
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+
+html {
+  background: rgb(var(--background));
+  color-scheme: light;
+}
+html.dark { color-scheme: dark; }
+
+body {
+  background: rgb(var(--background));
+  color: rgb(var(--foreground));
+  font-family: var(--font-inter), system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 15px;
+  line-height: 1.65;
+  letter-spacing: -0.005em;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-playfair), ui-serif, Georgia, serif;
+}
+
+a { color: inherit; text-decoration: none; }
+
+::selection {
+  background: rgb(var(--accent) / 0.2);
+  color: rgb(var(--foreground));
+}
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--foreground) / 0.12);
+  border-radius: 4px;
+}
+
+/* ============================================================
+   View Transitions API - diamond clip-path reveal on theme swap.
+   Ported from syedsubhan.in.
+   ============================================================ */
+::view-transition-group(root) {
+  animation-duration: 0.7s;
+  animation-timing-function: var(--expo-out);
+}
+::view-transition-new(root) {
+  animation-name: reveal-light;
+  animation-fill-mode: both;
+  mix-blend-mode: normal;
+}
+::view-transition-old(root),
+.dark::view-transition-old(root) {
+  animation: none;
+  animation-fill-mode: both;
+  z-index: -1;
+}
+.dark::view-transition-new(root) {
+  animation-name: reveal-dark;
+  animation-fill-mode: both;
+  mix-blend-mode: normal;
+}
+@keyframes reveal-dark {
+  from { clip-path: polygon(50% -71%, -50% 71%, -50% 71%, 50% -71%); }
+  to   { clip-path: polygon(50% -71%, -50% 71%, 50% 171%, 171% 50%); }
+}
+@keyframes reveal-light {
+  from { clip-path: polygon(171% 50%, 50% 171%, 50% 171%, 171% 50%); }
+  to   { clip-path: polygon(171% 50%, 50% 171%, -50% 71%, 50% -71%); }
+}
+
+/* Magic UI Border Beam keyframes (kept for AskBlock) */
+@keyframes border-beam {
+  100% { offset-distance: 100%; }
+}
+.animate-border-beam {
+  animation: border-beam var(--duration, 15s) infinite linear;
+  animation-delay: var(--delay, 0s);
+}
+
+/* Shimmer text - used for "cooking more..." style accents (future) */
+@keyframes shimmer {
+  from { background-position: 200% 0; }
+  to   { background-position: -200% 0; }
+}
+.animate-shimmer { animation: shimmer 3s linear infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

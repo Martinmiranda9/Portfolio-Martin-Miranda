@@ -1,0 +1,114 @@
+{
+  "common": {
+    "available": "Available for new projects",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "cv": "CV",
+    "email": "Email",
+    "socials": "Socials",
+    "viewAllProjects": "View all projects",
+    "cookingMore": "Cooking more...",
+    "builtBy": "Built by"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "bio": "Building end-to-end software from",
+    "bio2": "My approach integrates strategic database design, clean architecture backend development, and reactive frontend user experience, all articulated through continuous integration and delivery (CI/CD) workflows."
+  },
+  "aboutMe": {
+    "title": "About Me",
+    "caption": "The short version.",
+    "p1": "I'm Martin, a full-stack software developer focused on creating comprehensive solutions. My specialty is connecting database design with clean backend architectures and reactive frontend.",
+    "p2": "I work with automated CI/CD pipelines that ensure quality and delivery speed. From planning to deployment, I focus on building scalable and maintainable software.",
+    "p3": "I'm passionate about transforming complex ideas into functional products, always seeking the balance between performance, usability, and development best practices."
+  },
+  "navigation": {
+    "about": "About",
+    "work": "Work",
+    "skills": "Tech",
+    "projects": "Projects",
+    "education": "Education",
+    "contact": "Contact",
+    "menu": "MENU",
+    "close": "CLOSE"
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "caption": "Where I've worked.",
+    "entries": {
+      "freelance": {
+        "date": "2024 → Present",
+        "role": "Full Stack Developer",
+        "description": "Development of landing pages and web applications from scratch using HTML5, CSS3, JavaScript, and TypeScript. Angular (PrimeNG) and React up to the final deployment in production.",
+        "bullets": [
+          "AI-First Development: Implementation of workflows using Claude Code.",
+          "Backend Development: Working with .NET and Node.js; design of hybrid persistence architectures using SQL Server, PostgreSQL, MySQL, and MongoDB.",
+          "Frontend Development: Development of high-performance reactive interfaces on Angular (PrimeNG) and React.",
+          "DevOps & Deployment: Containerization with Docker and orchestration of automated deployments via GitHub Actions (CI/CD)."
+        ]
+      },
+      "encodelabs": {
+        "date": "Aug 2024 → Dec 2025",
+        "role": "Full Stack Developer & QA Engineer",
+        "description": "Full-stack development and quality assurance at Encodelabs, contributing to scalable web applications and ensuring product stability through manual testing.",
+        "bullets": [
+          "Frontend Development: Implementation of scalable and reactive user interfaces using Angular, PrimeNG and TailwindCSS, ensuring a fluid and professional user experience (UX).",
+          "Systems Integration: Consumption and linking of RESTful APIs with the frontend, guaranteeing correct data communication and efficient state management in the application.",
+          "Quality Assurance (QA): Execution of the complete testing cycle for the Vivero productivo municipal Quilino, from strategic test case design to defect reporting and tracking in Jira, raising product stability standards.",
+          "Architecture & Best Practices: Application of agile methodologies for functional component delivery, collaborating in a high-performance technical environment."
+        ]
+      }
+    }
+  },
+  "techStack": {
+    "title": "Tech Stack",
+    "caption": "The arsenal for building digital experiences."
+  },
+  "projects": {
+    "title": "Selected Projects",
+    "items": {
+      "snapshelf": {
+        "title": "SnapShelf",
+        "description": "Mobile grocery tracker with AI-powered item scanning, expiry reminders, and a trust-first workflow to reduce food waste."
+      },
+      "bkshoot": {
+        "title": "BK-Shoot",
+        "description": "Low-cost IoT device that detects basketball makes/misses in real time using IR + vibration sensor fusion."
+      },
+      "cnn": {
+        "title": "CNN Architecture Comparison",
+        "description": "Benchmarked three CNN architectures on 120K+ food images, proving EfficientNetB0 matches ResNet-50 while being 5.9x smaller."
+      },
+      "portfolio": {
+        "title": "Personal Web Portfolio",
+        "description": "Single-page portfolio with custom full-page navigation, cursor-reactive gradients, and 95+ Lighthouse scores."
+      },
+      "scraper": {
+        "title": "Wikipedia Scraper",
+        "description": "Async crawler with 100 concurrent workers, O(1) URL deduplication, and a 20-second global deadline."
+      },
+      "library": {
+        "title": "University Library System",
+        "description": "Java MVC console app with inheritance hierarchies, polymorphic loan rules, and custom CSV persistence."
+      }
+    }
+  },
+  "education": {
+    "title": "Education",
+    "caption": "Academic background.",
+    "aru": {
+      "description": "Final-year BSc, expected May 2026.",
+      "bullets": [
+        "Predicted First-Class Honours (1st).",
+        "Basketball scholarship athlete.",
+        "Dissertation 'Comparative Evaluation of CV Pipelines for Food Recognition': benchmarked fine-tuned YOLOv8s, a YOLO + EfficientNetB0 hybrid, and GPT-5.2 across a 14-class produce task, 4 image conditions, and 1,440 inferences. Winning pipeline integrated into a full-stack app."
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Have a project in mind?",
+    "description": "I'm available for new projects. Send me an email and let's talk.",
+    "getInTouch": "Get in touch."
+  }
+}
