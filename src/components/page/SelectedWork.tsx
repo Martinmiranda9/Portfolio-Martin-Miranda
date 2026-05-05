@@ -13,7 +13,7 @@ import { siteConfig } from '@/lib/constants'
 
 const FEATURED_SLUGS = [
   'vigil-24x7',
-  'bk-shoot',
+  'vivero-quilino',
   'deep-learning-cnn-comparison',
   'wikipedia-scraper',
 ]
@@ -21,7 +21,7 @@ const FEATURED_SLUGS = [
 // Map slugs to translation keys
 const SLUG_TO_KEY: Record<string, string> = {
   'vigil-24x7': 'vigil',
-  'bk-shoot': 'bkshoot',
+  'vivero-quilino': 'vivero',
   'deep-learning-cnn-comparison': 'cnn',
   'wikipedia-scraper': 'scraper',
 }

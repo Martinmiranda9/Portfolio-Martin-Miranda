@@ -93,9 +93,27 @@
           ]
         }
       },
-      "bkshoot": {
-        "title": "BK-Shoot",
-        "description": "Low-cost IoT device that detects basketball makes/misses in real time using IR + vibration sensor fusion."
+      "vivero": {
+        "title": "Vivero Quilino",
+        "description": "Full-stack agricultural e-commerce platform for the digitalization and scalability of regional sales.",
+        "caseStudy": {
+          "challenge": "The Quilino Municipal Nursery needed to modernize its sales processes, which were carried out in a traditional and limited way. The challenge was to design a digital solution that would centralize the product catalog, manage orders in real time, and expand the nursery's reach toward a functional and scalable e-commerce model.",
+          "approach": "Developed the end-to-end user interface alongside a team, prioritizing modular architecture and reactivity. The platform enables fluid catalog navigation, shopping cart management, and clean integration with backend services. A professional design system was implemented using advanced component libraries to guarantee an optimal user experience (UX).",
+          "features": [
+            {
+              "title": "Reactive Catalog",
+              "description": "Dynamic interface built with Angular that allows filtering and searching agricultural products with high performance."
+            },
+            {
+              "title": "E-commerce Management",
+              "description": "Shopping cart system and automated order flow linked with WhatsApp to simplify sales conversion."
+            },
+            {
+              "title": "Inventory Management (CRUD)",
+              "description": "Implementation of a complete system for adding, removing, and modifying products and services, ensuring the catalog is kept updated in real time."
+            }
+          ]
+        }
       },
       "cnn": {
         "title": "CNN Architecture Comparison",

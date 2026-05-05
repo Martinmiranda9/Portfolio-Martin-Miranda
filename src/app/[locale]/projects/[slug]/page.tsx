@@ -12,7 +12,7 @@ import { LanguageToggle } from '@/components/ui/LanguageToggle'
 // Map slugs to translation keys (same as SelectedWork)
 const SLUG_TO_KEY: Record<string, string> = {
   'vigil-24x7': 'vigil',
-  'bk-shoot': 'bkshoot',
+  'vivero-quilino': 'vivero',
   'deep-learning-cnn-comparison': 'cnn',
   'personal-web-portfolio': 'portfolio',
   'wikipedia-scraper': 'scraper',
@@ -66,12 +66,22 @@ export default function ProjectPage() {
 
   const cs = project.caseStudy
   const translationKey = SLUG_TO_KEY[slug]
-  
-  const hasCaseStudyTranslation = translationKey && messages.projects?.items?.[translationKey]?.caseStudy
-  
-  const challengeText = hasCaseStudyTranslation ? t(`items.${translationKey}.caseStudy.challenge` as any) : cs?.challenge
-  const approachText = hasCaseStudyTranslation ? t(`items.${translationKey}.caseStudy.approach` as any) : cs?.approach
-  const featuresData = hasCaseStudyTranslation ? t.raw(`items.${translationKey}.caseStudy.features` as any) : cs?.features
+  let challengeText = cs?.challenge
+  let approachText = cs?.approach
+  let featuresData = cs?.features
+
+  if (translationKey) {
+    try {
+      const transChallenge = t(`items.${translationKey}.caseStudy.challenge` as any)
+      if (transChallenge && !transChallenge.includes('caseStudy.challenge')) {
+        challengeText = transChallenge
+        approachText = t(`items.${translationKey}.caseStudy.approach` as any)
+        featuresData = t.raw(`items.${translationKey}.caseStudy.features` as any)
+      }
+    } catch (e) {
+      // Fallback to English data in projects.ts
+    }
+  }
 
   return (
     <>

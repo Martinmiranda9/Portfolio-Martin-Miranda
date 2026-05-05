@@ -93,9 +93,27 @@
           ]
         }
       },
-      "bkshoot": {
-        "title": "BK-Shoot",
-        "description": "Dispositivo IoT de bajo costo que detecta encestes/fallos en baloncesto en tiempo real usando fusión de sensores IR + vibración."
+      "vivero": {
+        "title": "Vivero Quilino",
+        "description": "E-commerce agrícola integral para la digitalización y escalabilidad de ventas regionales.",
+        "caseStudy": {
+          "challenge": "El Vivero Municipal de Quilino necesitaba modernizar sus procesos de comercialización, los cuales se realizaban de forma tradicional y limitada. El reto consistió en diseñar una solución digital que permitiera centralizar el catálogo de productos, gestionar pedidos en tiempo real y expandir el alcance del vivero hacia un modelo de e-commerce funcional y escalable.",
+          "approach": "Desarrollé junto a un equipo la interfaz de usuario de punta a punta, priorizando la arquitectura modular y la reactividad. La plataforma permite una navegación fluida por el catálogo, gestión de carritos de compra y una integración limpia con servicios de backend. Se implementó un sistema de diseño profesional utilizando librerías de componentes avanzadas para garantizar una experiencia de usuario (UX) óptima.",
+          "features": [
+            {
+              "title": "Catálogo Reactivo",
+              "description": "Interfaz dinámica desarrollada en Angular que permite filtrar y buscar productos agrícolas con alta performance."
+            },
+            {
+              "title": "Gestión de E-commerce",
+              "description": "Sistema de carrito de compras y flujo de pedidos automatizado linkeado con WhatsApp para simplificar la conversión de ventas."
+            },
+            {
+              "title": "Gestión de Inventario (CRUD)",
+              "description": "Implementación de un sistema completo de altas, bajas y modificaciones para productos y servicios, garantizando que el catálogo se mantenga actualizado en tiempo real."
+            }
+          ]
+        }
       },
       "cnn": {
         "title": "Comparación de Arquitecturas CNN",

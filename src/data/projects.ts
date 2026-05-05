@@ -29,7 +29,7 @@ export const projects: Project[] = [
   {
     title: 'Vigil 24x7',
     description: 'Intelligent management system for private security with automated digitization of operational processes.',
-    tags: ['.NET', 'Angular', 'MySQL', 'Docker', 'OCR'],
+    tags: ['.NET', 'Angular', 'SQL Server', 'Docker', 'OCR'],
     link: 'https://github.com/Martinmiranda9/Sistema-de-Gestion-de-Vigiladores---V24X7',
     slug: 'vigil-24x7',
     caseStudy: {
@@ -53,35 +53,28 @@ export const projects: Project[] = [
     }
   },
   {
-    title: 'BK-Shoot',
-    description: 'Low-cost IoT device that detects basketball makes/misses in real time using IR + vibration sensor fusion.',
-    tags: ['C++', 'IoT', 'Arduino', 'Android'],
-    link: 'https://github.com/omorros/bk-shoot',
-    slug: 'bk-shoot',
+    title: 'Vivero Quilino',
+    description: 'Full-stack agricultural e-commerce platform for the digitalization and scalability of regional sales.',
+    tags: ['Node.js', 'Angular', 'PrimeNG', 'Tailwind CSS', 'MySQL'],
+    link: 'https://github.com/Martinmiranda9/Vivero-Quilino-',
+    slug: 'vivero-quilino',
     caseStudy: {
-      challenge: 'Basketball analytics rely on expensive proprietary systems, making real-time shooting metrics inaccessible to amateur players.',
-      approach: 'Engineered a <€25 IoT device fusing IR and vibration sensors to classify makes, misses, and swishes at ~95% accuracy. Stats stream via Bluetooth to a custom Android app.',
+      challenge: 'The Quilino Municipal Nursery needed to modernize its sales processes, which were carried out in a traditional and limited way. The challenge was to design a digital solution that would centralize the product catalog, manage orders in real time, and expand the nursery\'s reach toward a functional and scalable e-commerce model.',
+      approach: 'Developed the end-to-end user interface alongside a team, prioritizing modular architecture and reactivity. The platform enables fluid catalog navigation, shopping cart management, and clean integration with backend services. A professional design system was implemented using advanced component libraries to guarantee an optimal user experience (UX).',
       features: [
-        { title: 'Sensor Fusion Algorithm', description: 'Custom C++ algorithm correlates IR triggers and vibration spikes within a 1000ms window.' },
-        { title: 'Cost-Effective Hardware', description: 'Built with Arduino Uno, IR sensors, and vibration modules for under €25.' },
-        { title: 'Full-Stack System', description: 'Designed circuitry, embedded firmware, Bluetooth protocol, and Android app end-to-end.' },
-        { title: 'Field-Validated', description: 'Tested with 20+ participants and ~2,000 shots achieving statistical significance.' }
+        { title: 'Reactive Catalog', description: 'Dynamic interface built with Angular that allows filtering and searching agricultural products with high performance.' },
+        { title: 'E-commerce Management', description: 'Shopping cart system and automated order flow linked with WhatsApp to simplify sales conversion.' },
+        { title: 'Inventory Management (CRUD)', description: 'Implementation of a complete system for adding, removing, and modifying products and services, ensuring the catalog is kept updated in real time.' }
       ],
-      videoUrl: 'https://github.com/user-attachments/assets/b2f04fc3-4c96-47cb-862c-22dc06aca971',
-      thumbnail: '/gradients/projects.svg',
+      thumbnail: '/images/vivero/vivero8.png',
       screenshots: [
-        'https://raw.githubusercontent.com/omorros/bk-shoot/master/hardware/circuit_image.png',
-        'https://raw.githubusercontent.com/omorros/bk-shoot/master/testing/01_setup_guide.png'
-      ],
-      awards: [
-        {
-          title: 'Honourable Mention - 12th Planter de Sondeigs i Experiments',
-          description: 'Awarded by UPC, UAB, UB, and Idescat for "combining statistics, Big Data, AI, and programming with sports".'
-        },
-        {
-          title: 'ICFO Young Photonics Congress',
-          description: 'Selected to present research on sensor fusion and optical detection to industry experts.'
-        }
+        '/images/vivero/vivero8.png',
+        '/images/vivero/vivero5.png',
+        '/images/vivero/vviero6.png',
+        '/images/vivero/vivero3.png',
+        '/images/vivero/vivero4.png',
+        '/images/vivero/vivero7.png',
+        '/images/vivero/vivero9.png'
       ]
     }
   },

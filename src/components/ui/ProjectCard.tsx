@@ -8,7 +8,7 @@ import { useState } from 'react'
 import { motion, useSpring } from 'framer-motion'
 import { ExternalLink, Github } from 'lucide-react'
 import { cn, triggerHaptic } from '@/lib/utils'
-import { Link } from '@/i18n/navigation'
+import { useRouter } from '@/i18n/navigation'
 
 interface ProjectCardProps {
   title: string
@@ -40,6 +40,7 @@ export function ProjectCard({
   onLeave,
 }: ProjectCardProps) {
   const [, setIsHovered] = useState(false)
+  const router = useRouter()
 
   const scale = useSpring(1, { stiffness: 300, damping: 20 })
   const y = useSpring(0, { stiffness: 300, damping: 20 })
@@ -69,7 +70,6 @@ export function ProjectCard({
     .toUpperCase()
 
   return (
-    <Link href={slug ? `/projects/${slug}` : (githubUrl || '#')} className="block">
     <motion.div
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -78,6 +78,9 @@ export function ProjectCard({
       style={{ scale, y }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+      onClick={() => {
+        if (slug) router.push(`/projects/${slug}`)
+      }}
       className={cn(
         'group relative flex flex-col w-full bg-background rounded-2xl border border-border overflow-hidden shadow-sm hover:shadow-2xl hover:shadow-black/5 dark:hover:shadow-white/5 transition-all duration-500 will-change-transform h-auto md:h-[420px] cursor-pointer',
         isDimmed
@@ -179,6 +182,5 @@ export function ProjectCard({
         </div>
       </div>
     </motion.div>
-    </Link>
   )
 }
