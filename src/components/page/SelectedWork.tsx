@@ -12,7 +12,7 @@ import { ProjectCard } from '@/components/ui/ProjectCard'
 import { siteConfig } from '@/lib/constants'
 
 const FEATURED_SLUGS = [
-  'snapshelf',
+  'vigil-24x7',
   'bk-shoot',
   'deep-learning-cnn-comparison',
   'wikipedia-scraper',
@@ -20,7 +20,7 @@ const FEATURED_SLUGS = [
 
 // Map slugs to translation keys
 const SLUG_TO_KEY: Record<string, string> = {
-  'snapshelf': 'snapshelf',
+  'vigil-24x7': 'vigil',
   'bk-shoot': 'bkshoot',
   'deep-learning-cnn-comparison': 'cnn',
   'wikipedia-scraper': 'scraper',
@@ -56,6 +56,7 @@ export function SelectedWork() {
             <ProjectCard
               key={p.slug}
               index={i}
+              slug={p.slug}
               title={key ? t(`items.${key}.title`) : p.title}
               description={key ? t(`items.${key}.description`) : p.description}
               tags={p.tags}

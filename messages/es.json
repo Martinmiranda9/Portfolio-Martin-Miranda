@@ -67,9 +67,31 @@
   "projects": {
     "title": "Proyectos Seleccionados",
     "items": {
-      "snapshelf": {
-        "title": "SnapShelf",
-        "description": "Rastreador de comestibles móvil con escaneo de artículos impulsado por IA, recordatorios de vencimiento y un flujo de trabajo basado en confianza para reducir el desperdicio de alimentos."
+      "vigil": {
+        "title": "Vigil 24x7",
+        "description": "Sistema de gestión inteligente para seguridad privada con digitalización automatizada de procesos operativos.",
+        "caseStudy": {
+          "challenge": "Las empresas de seguridad privada gestionan los horarios de turnos y los registros de asistencia mediante formularios en papel escritos a mano, lo que provoca errores de entrada manual de datos, retrasos en los informes y una asignación ineficiente de recursos en múltiples sitios.",
+          "approach": "Construí una plataforma integral para la optimización de recursos humanos y el control de asistencia. El sistema implementa un motor OCR (Reconocimiento Óptico de Caracteres) para transformar formularios de turnos escritos a mano en datos digitales procesables, eliminando errores de entrada manual. Incluye un dashboard automatizado para la visualización de métricas críticas y la gestión del personal en tiempo real.",
+          "features": [
+            {
+              "title": "Motor OCR",
+              "description": "Sistema de Reconocimiento Óptico de Caracteres que transforma horarios de turnos escritos a mano en datos digitales estructurados, eliminando errores de entrada manual."
+            },
+            {
+              "title": "Flujo de Trabajo AI-First",
+              "description": "Pipeline de procesamiento inteligente que automatiza la extracción, validación e integración de datos en el sistema de gestión."
+            },
+            {
+              "title": "Dashboard Automatizado",
+              "description": "Visualización en tiempo real de métricas críticas: asistencia, cobertura de turnos, horas extras y asignación de personal en múltiples sitios."
+            },
+            {
+              "title": "Pipeline CI/CD",
+              "description": "Contenerizado con Docker y despliegues automatizados mediante GitHub Actions para integración y entrega continua."
+            }
+          ]
+        }
       },
       "bkshoot": {
         "title": "BK-Shoot",
@@ -110,5 +132,17 @@
     "subtitle": "¿Tienes un proyecto en mente?",
     "description": "Estoy disponible para nuevos proyectos. Envíame un correo y hablemos.",
     "getInTouch": "Ponte en contacto."
+  },
+  "caseStudy": {
+    "allProjects": "Todos los proyectos",
+    "backToProjects": "Volver a todos los proyectos",
+    "backToHome": "Volver al inicio",
+    "notFound": "Proyecto no encontrado.",
+    "code": "Código",
+    "challenge": "Desafío",
+    "approach": "Acercarse",
+    "whatItDoes": "Lo que hace",
+    "gallery": "Galería",
+    "viewReport": "Ver reporte completo"
   }
 }

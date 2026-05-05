@@ -7,7 +7,7 @@ import { WorkTimeline, type TimelineItem } from '@/components/ui/WorkTimeline'
 
 // Approximate years per project (placeholder until a `year` field is added to projects.ts).
 const YEARS: Record<string, string> = {
-  snapshelf: '2025',
+  'vigil-24x7': '2025',
   'bk-shoot': '2024',
   'deep-learning-cnn-comparison': '2024',
   'wikipedia-scraper': '2023',

@@ -67,9 +67,31 @@
   "projects": {
     "title": "Selected Projects",
     "items": {
-      "snapshelf": {
-        "title": "SnapShelf",
-        "description": "Mobile grocery tracker with AI-powered item scanning, expiry reminders, and a trust-first workflow to reduce food waste."
+      "vigil": {
+        "title": "Vigil 24x7",
+        "description": "Intelligent management system for private security with automated digitization of operational processes.",
+        "caseStudy": {
+          "challenge": "Private security companies manage shift schedules and attendance records using handwritten paper forms, leading to manual data entry errors, delayed reporting, and inefficient resource allocation across multiple sites.",
+          "approach": "Built an integral platform for human resources optimization and attendance control. The system implements an OCR (Optical Character Recognition) engine to transform handwritten shift forms into processable digital data, eliminating manual entry errors. Includes an automated dashboard for critical metrics visualization and real-time personnel management.",
+          "features": [
+            {
+              "title": "OCR Engine",
+              "description": "Optical Character Recognition system that transforms handwritten shift schedules into structured digital data, eliminating manual entry errors."
+            },
+            {
+              "title": "AI-First Workflow",
+              "description": "Intelligent processing pipeline that automates data extraction, validation, and integration into the management system."
+            },
+            {
+              "title": "Automated Dashboard",
+              "description": "Real-time visualization of critical metrics: attendance, shift coverage, overtime hours, and personnel allocation across sites."
+            },
+            {
+              "title": "CI/CD Pipeline",
+              "description": "Containerized with Docker and automated deployments via GitHub Actions for continuous integration and delivery."
+            }
+          ]
+        }
       },
       "bkshoot": {
         "title": "BK-Shoot",
@@ -110,5 +132,17 @@
     "subtitle": "Have a project in mind?",
     "description": "I'm available for new projects. Send me an email and let's talk.",
     "getInTouch": "Get in touch."
+  },
+  "caseStudy": {
+    "allProjects": "All projects",
+    "backToProjects": "Back to all projects",
+    "backToHome": "Back to home",
+    "notFound": "Project not found.",
+    "code": "Code",
+    "challenge": "Challenge",
+    "approach": "Approach",
+    "whatItDoes": "What it does",
+    "gallery": "Gallery",
+    "viewReport": "View full report"
   }
 }

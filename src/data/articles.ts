@@ -31,12 +31,12 @@ export const articles: Article[] = [
     thumbnail: '/gradients/projects.svg',
   },
   {
-    slug: 'snapshelf-vision-loop',
-    title: 'The Trust-First Vision Loop',
-    description: 'Why SnapShelf keeps GPT-4o in a draft staging area - and the UX pattern behind it.',
+    slug: 'vigil-ocr-digitization',
+    title: 'OCR for Security Operations',
+    description: 'How Vigil 24x7 transforms handwritten shift schedules into structured data - the OCR pipeline and validation workflow.',
     date: '2025',
     readTime: '6 min',
-    href: 'https://github.com/omorros/SnapShelf',
+    href: 'https://github.com/Martinmiranda9/Sistema-de-Gestion-de-Vigiladores---V24X7',
     thumbnail: '/gradients/projects.svg',
   },
 ]

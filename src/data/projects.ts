@@ -27,19 +27,28 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: 'SnapShelf',
-    description: 'Mobile grocery tracker with AI-powered item scanning, expiry reminders, and a trust-first workflow to reduce food waste.',
-    tags: ['TypeScript', 'React Native', 'Python', 'PostgreSQL'],
-    link: 'https://github.com/omorros/SnapShelf',
-    slug: 'snapshelf',
+    title: 'Vigil 24x7',
+    description: 'Intelligent management system for private security with automated digitization of operational processes.',
+    tags: ['.NET', 'Angular', 'MySQL', 'Docker', 'OCR'],
+    link: 'https://github.com/Martinmiranda9/Sistema-de-Gestion-de-Vigiladores---V24X7',
+    slug: 'vigil-24x7',
     caseStudy: {
-      challenge: 'Household food waste is driven by forgotten inventory. Existing tracking apps fail because manual data entry is too tedious to sustain.',
-      approach: 'Built a React Native app using GPT-4o Vision and barcode scanning for instant item capture. A draft-to-inventory workflow lets AI suggest entries while users retain control over their data.',
+      challenge: 'Private security companies manage shift schedules and attendance records using handwritten paper forms, leading to manual data entry errors, delayed reporting, and inefficient resource allocation across multiple sites.',
+      approach: 'Built an integral platform for human resources optimization and attendance control. The system implements an OCR (Optical Recognition) engine to transform handwritten shift forms into processable digital data, eliminating manual entry errors. Includes an automated dashboard for critical metrics visualization and real-time personnel management.',
       features: [
-        { title: 'AI-Powered Capture', description: 'GPT-4o Vision identifies items from photos; OpenFoodFacts handles barcode lookups.' },
-        { title: 'Trust-First Workflow', description: 'AI suggestions land in a staging area for quick user confirmation before entering inventory.' },
-        { title: 'Smart Expiry Prediction', description: 'Uses historical data and category heuristics to automatically estimate shelf life.' },
-        { title: 'Production Backend', description: 'FastAPI + SQLAlchemy with comprehensive Pytest coverage and JWT security.' }
+        { title: 'OCR Engine', description: 'Optical Character Recognition system that transforms handwritten shift schedules into structured digital data, eliminating manual entry errors.' },
+        { title: 'AI-First Workflow', description: 'Intelligent processing pipeline that automates data extraction, validation, and integration into the management system.' },
+        { title: 'Automated Dashboard', description: 'Real-time visualization of critical metrics: attendance, shift coverage, overtime hours, and personnel allocation across sites.' },
+        { title: 'CI/CD Pipeline', description: 'Containerized with Docker and automated deployments via GitHub Actions for continuous integration and delivery.' }
+      ],
+      thumbnail: '/images/vigil/vigil1.png',
+      screenshots: [
+        '/images/vigil/vigil1.png',
+        '/images/vigil/vigil2.png',
+        '/images/vigil/vigil3.png',
+        '/images/vigil/vigil4.png',
+        '/images/vigil/vigil5.png',
+        '/images/vigil/vigil6.png'
       ]
     }
   },

@@ -8,11 +8,13 @@ import { useState } from 'react'
 import { motion, useSpring } from 'framer-motion'
 import { ExternalLink, Github } from 'lucide-react'
 import { cn, triggerHaptic } from '@/lib/utils'
+import { Link } from '@/i18n/navigation'
 
 interface ProjectCardProps {
   title: string
   description: string
   tags: string[]
+  slug?: string
   link?: string
   githubUrl?: string
   videoUrl?: string
@@ -27,6 +29,7 @@ export function ProjectCard({
   title,
   description,
   tags,
+  slug,
   link,
   githubUrl,
   videoUrl,
@@ -66,6 +69,7 @@ export function ProjectCard({
     .toUpperCase()
 
   return (
+    <Link href={slug ? `/projects/${slug}` : (githubUrl || '#')} className="block">
     <motion.div
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -75,7 +79,7 @@ export function ProjectCard({
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       className={cn(
-        'group relative flex flex-col w-full bg-background rounded-2xl border border-border overflow-hidden shadow-sm hover:shadow-2xl hover:shadow-black/5 dark:hover:shadow-white/5 transition-all duration-500 will-change-transform h-auto md:h-[420px]',
+        'group relative flex flex-col w-full bg-background rounded-2xl border border-border overflow-hidden shadow-sm hover:shadow-2xl hover:shadow-black/5 dark:hover:shadow-white/5 transition-all duration-500 will-change-transform h-auto md:h-[420px] cursor-pointer',
         isDimmed
           ? 'grayscale opacity-40 blur-[1px] scale-95'
           : 'grayscale-0 opacity-100 blur-0'
@@ -175,5 +179,6 @@ export function ProjectCard({
         </div>
       </div>
     </motion.div>
+    </Link>
   )
 }
