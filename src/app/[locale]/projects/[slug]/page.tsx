@@ -12,6 +12,7 @@ import { LanguageToggle } from '@/components/ui/LanguageToggle'
 // Map slugs to translation keys (same as SelectedWork)
 const SLUG_TO_KEY: Record<string, string> = {
   'vigil-24x7': 'vigil',
+  'ley-clara': 'leyclara',
   'vivero-quilino': 'vivero',
   'deep-learning-cnn-comparison': 'cnn',
   'personal-web-portfolio': 'portfolio',

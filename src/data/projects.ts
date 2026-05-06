@@ -53,6 +53,33 @@ export const projects: Project[] = [
     }
   },
   {
+    title: 'Ley Clara',
+    description: 'AI-powered legal platform that translates complex laws into plain language and provides advanced tools for legal professionals.',
+    tags: ['Angular', 'PrimeNG', 'Node.js', 'Express', 'PostgreSQL', 'MongoDB', 'Docker', 'RAG', 'LLMs'],
+    link: 'https://github.com/Martinmiranda9',
+    slug: 'ley-clara',
+    caseStudy: {
+      challenge: 'Legal regulations are written in complex technical language that most citizens cannot understand. At the same time, legal professionals lack automated tools to analyze, cross-reference, and stay updated on regulatory changes efficiently, resulting in time-consuming manual processes.',
+      approach: 'Designed and developed an AI-powered legal intelligence platform using RAG (Retrieval-Augmented Generation) with LLMs to interpret and analyze legislation. The frontend is built with Angular and PrimeNG, the backend with Node.js and Express, and data is managed through PostgreSQL and MongoDB. Integrates government APIs, OAuth 2.0 + JWT authentication, and is deployed via Docker with Swagger documentation.',
+      features: [
+        { title: 'Plain Language Translation', description: 'Translates complex legal regulations into simple, clear language with practical examples and actionable steps for any citizen.' },
+        { title: 'Contextual AI Search', description: 'Natural language queries powered by RAG that return precise answers based on current legislation and legal databases.' },
+        { title: 'Legal Document Analysis', description: 'Interprets uploaded PDFs or legal texts and suggests related regulations and case law automatically.' },
+        { title: 'Personalized Legal Alerts', description: 'Notifies users of relevant regulatory changes based on their profile, industry, or area of interest.' },
+        { title: 'Regulation Validation', description: 'Indicates whether a law is currently in force, has been modified, or has been repealed.' },
+        { title: 'Legal Impact Simulation', description: 'Shows how a specific law affects a person, company, or activity through scenario-based analysis.' },
+        { title: 'Professional Dashboard', description: 'Allows legal professionals to manage consultations, documents, and generate structured legal reports.' }
+      ],
+      thumbnail: '/images/ley-clara/ley-clara-1.png',
+      screenshots: [
+        '/images/ley-clara/ley-clara-1.png',
+        '/images/ley-clara/ley-clara-2.png',
+        '/images/ley-clara/ley-clara-3.png',
+        '/images/ley-clara/ley-clara-4.png'
+      ]
+    }
+  },
+  {
     title: 'Vivero Quilino',
     description: 'Full-stack agricultural e-commerce platform for the digitalization and scalability of regional sales.',
     tags: ['Node.js', 'Angular', 'PrimeNG', 'Tailwind CSS', 'MySQL'],

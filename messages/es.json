@@ -93,6 +93,44 @@
           ]
         }
       },
+      "leyclara": {
+        "title": "Ley Clara",
+        "description": "Plataforma legal impulsada por IA que traduce leyes complejas a lenguaje claro y ofrece herramientas avanzadas para profesionales del derecho.",
+        "caseStudy": {
+          "challenge": "Las normativas legales están escritas en un lenguaje técnico complejo que la mayoría de los ciudadanos no puede comprender. Al mismo tiempo, los profesionales del derecho carecen de herramientas automatizadas para analizar, cruzar referencias y mantenerse actualizados sobre cambios normativos de forma eficiente, lo que resulta en procesos manuales que consumen mucho tiempo.",
+          "approach": "Diseñé y desarrollé una plataforma de inteligencia legal impulsada por IA utilizando RAG (Retrieval-Augmented Generation) con LLMs para interpretar y analizar legislación. El frontend se construye con Angular y PrimeNG, el backend con Node.js y Express, y los datos se gestionan mediante PostgreSQL y MongoDB. Integra APIs gubernamentales, autenticación OAuth 2.0 + JWT, y se despliega mediante Docker con documentación en Swagger.",
+          "features": [
+            {
+              "title": "Traducción a Lenguaje Claro",
+              "description": "Traduce normativas legales complejas a un lenguaje simple y claro con ejemplos prácticos y pasos accionables para cualquier ciudadano."
+            },
+            {
+              "title": "Búsqueda Contextual con IA",
+              "description": "Consultas en lenguaje natural potenciadas por RAG que devuelven respuestas precisas basadas en legislación vigente y bases de datos legales."
+            },
+            {
+              "title": "Análisis de Documentos Legales",
+              "description": "Interpreta PDFs o textos jurídicos cargados y sugiere normativa y jurisprudencia relacionada de forma automática."
+            },
+            {
+              "title": "Alertas Legales Personalizadas",
+              "description": "Notifica a los usuarios sobre cambios normativos relevantes según su perfil, industria o área de interés."
+            },
+            {
+              "title": "Validación de Normas",
+              "description": "Indica si una ley está vigente, fue modificada o fue derogada."
+            },
+            {
+              "title": "Simulación de Impacto Legal",
+              "description": "Muestra cómo una ley específica afecta a una persona, empresa o actividad mediante análisis basado en escenarios."
+            },
+            {
+              "title": "Panel Profesional",
+              "description": "Permite a los profesionales del derecho gestionar consultas, documentos y generar reportes legales estructurados."
+            }
+          ]
+        }
+      },
       "vivero": {
         "title": "Vivero Quilino",
         "description": "E-commerce agrícola integral para la digitalización y escalabilidad de ventas regionales.",
