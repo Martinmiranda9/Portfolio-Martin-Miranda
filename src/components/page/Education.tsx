@@ -42,8 +42,8 @@ export function Education() {
   const items: TimelineItem[] = EDUCATION.map((e, i) => ({
     id: `${e.institution}-${i}`,
     date: e.date,
-    title: e.institution,
-    subtitle: t('quality.degree'),
+    title: t('quality.degree'),
+    subtitle: e.institution,
     logo: e.logo,
     description: t('quality.description'),
     bullets: [
