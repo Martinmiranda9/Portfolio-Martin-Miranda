@@ -153,17 +153,35 @@
           ]
         }
       },
-      "cnn": {
-        "title": "Comparación de Arquitecturas CNN",
-        "description": "Evalué tres arquitecturas CNN en más de 120K imágenes de alimentos, demostrando que EfficientNetB0 iguala a ResNet-50 siendo 5.9x más pequeño."
+      "entitymgmt": {
+        "title": "Sistema de Gestión de Entidades",
+        "description": "Prueba técnica: Sistema de gestión de datos (ABM) completo construido con .NET (C#) y SQL Server, enfocado en arquitectura limpia e integridad de datos.",
+        "caseStudy": {
+          "challenge": "Este proyecto fue desarrollado como parte de una prueba técnica. El objetivo consistió en resolver un requerimiento de negocio en un tiempo limitado, demostrando solvencia en la arquitectura de software y el manejo de persistencia de datos.",
+          "approach": "Se diseñó una arquitectura sólida para la administración de registros, priorizando la eficiencia en las consultas y la validación rigurosa de la lógica de negocio. El sistema asegura una comunicación fluida entre el servidor y la base de datos para garantizar la integridad de la información en todo momento.",
+          "features": [
+            {
+              "title": "CRUD (ABM) Completo",
+              "description": "Implementación total de las operaciones de Altas, Bajas y Modificaciones sobre entidades de negocio, permitiendo una gestión dinámica de los registros."
+            },
+            {
+              "title": "Validación de Datos",
+              "description": "Aplicación de lógica técnica para asegurar que la información ingresada cumpla con los formatos y restricciones del sistema antes de su persistencia."
+            },
+            {
+              "title": "Integración de Base de Datos",
+              "description": "Conexión optimizada con el motor de base de datos para el almacenamiento y recuperación eficiente de la información."
+            },
+            {
+              "title": "Código Limpio",
+              "description": "Desarrollo enfocado en la legibilidad y mantenibilidad, siguiendo las mejores prácticas requeridas en entornos corporativos."
+            }
+          ]
+        }
       },
       "portfolio": {
         "title": "Portfolio Web Personal",
         "description": "Portfolio de una sola página con navegación personalizada de página completa, gradientes reactivos al cursor y puntuaciones Lighthouse 95+."
-      },
-      "scraper": {
-        "title": "Wikipedia Scraper",
-        "description": "Crawler asíncrono con 100 trabajadores concurrentes, deduplicación de URLs O(1) y un deadline global de 20 segundos."
       },
       "library": {
         "title": "Sistema de Biblioteca Universitaria",
@@ -174,13 +192,55 @@
   "education": {
     "title": "Educación",
     "caption": "Antecedentes académicos.",
-    "aru": {
-      "description": "Último año de BSc, graduación esperada mayo 2026.",
+    "quality": {
+      "degree": "Analista Desarrollador de Software",
+      "description": "Graduado como Analista Desarrollador de Software con una base sólida en prácticas y arquitecturas de programación modernas.",
       "bullets": [
-        "Primera clase con honores predicha (1st).",
-        "Atleta becado de baloncesto.",
-        "Tesis \"Evaluación Comparativa de Pipelines de CV para Reconocimiento de Alimentos\": comparé YOLOv8s fine-tuned, un híbrido YOLO + EfficientNetB0 y GPT-5.2 en una tarea de 14 clases de productos, 4 condiciones de imagen y 1,440 inferencias. El pipeline ganador se integró en una app full-stack."
+        "Formación integral en desarrollo de software, incluyendo arquitecturas frontend y backend.",
+        "Experiencia práctica en diseño de bases de datos, análisis de sistemas y metodologías ágiles.",
+        "Desarrollo de proyectos full-stack con enfoque en código limpio, escalabilidad y rendimiento."
       ]
+    }
+  },
+  "certifications": {
+    "title": "Licencias y Certificaciones",
+    "caption": "Desarrollo profesional y credenciales.",
+    "items": {
+      "claude-code": {
+        "name": "Claude Code in Action",
+        "institution": "Anthropic",
+        "date": "Mar 2026"
+      },
+      "qa-santex": {
+        "name": "Quality Assurance (QA)",
+        "institution": "Santex",
+        "date": "Ago 2025"
+      },
+      "prompt-eng": {
+        "name": "Foundations of Prompt Engineering",
+        "institution": "Amazon Web Services (AWS)",
+        "date": "May 2025"
+      },
+      "n8n": {
+        "name": "Automatización N8N",
+        "institution": "Universidad Nacional de Córdoba",
+        "date": "Ene 2026"
+      },
+      "python-cisco": {
+        "name": "Programación en Python",
+        "institution": "Cisco Networking Academy",
+        "date": "Ago 2022"
+      },
+      "gestion-comercial": {
+        "name": "Gestión Comercial",
+        "institution": "Universidad Nacional de Córdoba",
+        "date": ""
+      },
+      "data-analytics": {
+        "name": "Data Analytics",
+        "institution": "Coderhouse",
+        "date": "Ene 2021"
+      }
     }
   },
   "contact": {

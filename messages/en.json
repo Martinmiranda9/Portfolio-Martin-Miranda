@@ -153,17 +153,35 @@
           ]
         }
       },
-      "cnn": {
-        "title": "CNN Architecture Comparison",
-        "description": "Benchmarked three CNN architectures on 120K+ food images, proving EfficientNetB0 matches ResNet-50 while being 5.9x smaller."
+      "entitymgmt": {
+        "title": "Entity Management System",
+        "description": "Technical test: Full CRUD data management system built with .NET (C#) and SQL Server, focused on clean architecture and data integrity.",
+        "caseStudy": {
+          "challenge": "This project was developed as part of a technical test. The objective was to solve a business requirement within a limited timeframe, demonstrating proficiency in software architecture and data persistence management.",
+          "approach": "Designed a solid architecture for record management, prioritizing query efficiency and rigorous business logic validation. The system ensures fluid communication between the server and the database to guarantee data integrity at all times.",
+          "features": [
+            {
+              "title": "Full CRUD (ABM)",
+              "description": "Complete implementation of Create, Read, Update, and Delete operations on business entities, enabling dynamic record management."
+            },
+            {
+              "title": "Data Validation",
+              "description": "Technical logic applied to ensure that input data complies with system formats and constraints before persistence."
+            },
+            {
+              "title": "Database Integration",
+              "description": "Optimized connection with the database engine for efficient data storage and retrieval."
+            },
+            {
+              "title": "Clean Code",
+              "description": "Development focused on readability and maintainability, following best practices required in corporate environments."
+            }
+          ]
+        }
       },
       "portfolio": {
         "title": "Personal Web Portfolio",
         "description": "Single-page portfolio with custom full-page navigation, cursor-reactive gradients, and 95+ Lighthouse scores."
-      },
-      "scraper": {
-        "title": "Wikipedia Scraper",
-        "description": "Async crawler with 100 concurrent workers, O(1) URL deduplication, and a 20-second global deadline."
       },
       "library": {
         "title": "University Library System",
@@ -174,13 +192,55 @@
   "education": {
     "title": "Education",
     "caption": "Academic background.",
-    "aru": {
-      "description": "Final-year BSc, expected May 2026.",
+    "quality": {
+      "degree": "Software Development Analyst",
+      "description": "Graduated as a Software Development Analyst with a strong foundation in modern programming practices and architectures.",
       "bullets": [
-        "Predicted First-Class Honours (1st).",
-        "Basketball scholarship athlete.",
-        "Dissertation 'Comparative Evaluation of CV Pipelines for Food Recognition': benchmarked fine-tuned YOLOv8s, a YOLO + EfficientNetB0 hybrid, and GPT-5.2 across a 14-class produce task, 4 image conditions, and 1,440 inferences. Winning pipeline integrated into a full-stack app."
+        "Comprehensive training in software development, including frontend and backend architectures.",
+        "Hands-on experience with database design, systems analysis, and agile methodologies.",
+        "Developed full-stack projects focusing on clean code, scalability, and performance."
       ]
+    }
+  },
+  "certifications": {
+    "title": "Licenses & Certifications",
+    "caption": "Professional development and credentials.",
+    "items": {
+      "claude-code": {
+        "name": "Claude Code in Action",
+        "institution": "Anthropic",
+        "date": "Mar 2026"
+      },
+      "qa-santex": {
+        "name": "Quality Assurance (QA)",
+        "institution": "Santex",
+        "date": "Aug 2025"
+      },
+      "prompt-eng": {
+        "name": "Foundations of Prompt Engineering",
+        "institution": "Amazon Web Services (AWS)",
+        "date": "May 2025"
+      },
+      "n8n": {
+        "name": "N8N Automation",
+        "institution": "Universidad Nacional de Córdoba",
+        "date": "Jan 2026"
+      },
+      "python-cisco": {
+        "name": "Python Programming",
+        "institution": "Cisco Networking Academy",
+        "date": "Aug 2022"
+      },
+      "gestion-comercial": {
+        "name": "Business Management",
+        "institution": "Universidad Nacional de Córdoba",
+        "date": ""
+      },
+      "data-analytics": {
+        "name": "Data Analytics",
+        "institution": "Coderhouse",
+        "date": "Jan 2021"
+      }
     }
   },
   "contact": {

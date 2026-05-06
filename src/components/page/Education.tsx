@@ -19,25 +19,20 @@ type EducationEntry = {
 
 const EDUCATION: EducationEntry[] = [
   {
-    institution: 'Anglia Ruskin University',
-    degree: 'BSc (Hons) Software Engineering · Cambridge',
-    date: '2023 - May 2026',
-    location: 'Cambridge, UK · On-site',
-    logo: '/aru-logo.jpg',
-    description: 'Final-year BSc, expected May 2026.',
-    bullets: [
-      'Predicted First-Class Honours (1st).',
-      'Basketball scholarship athlete.',
-      'Dissertation "Comparative Evaluation of CV Pipelines for Food Recognition": benchmarked fine-tuned YOLOv8s, a YOLO + EfficientNetB0 hybrid, and GPT-5.2 across a 14-class produce task, 4 image conditions, and 1,440 inferences. Winning pipeline integrated into a full-stack app.',
-    ],
+    institution: 'Quality ISAD',
+    degree: 'Software Development Analyst',
+    date: '2023 - 2025',
+    location: 'Córdoba, Argentina',
+    logo: '/images/quality-isad-logo.jpg',
+    description: '', // Handled via translation
+    bullets: [], // Handled via translation
     tags: [
-      'Machine Learning',
-      'Advanced OOP',
-      'Algorithms & Data Structures',
-      'Cloud Computing',
+      'Software Architecture',
+      'Full Stack Development',
       'Database Design',
-      'Digital Security',
-      'HCI',
+      'Systems Analysis',
+      'Agile Methodologies',
+      'Clean Code'
     ],
   },
 ]
@@ -48,13 +43,13 @@ export function Education() {
     id: `${e.institution}-${i}`,
     date: e.date,
     title: e.institution,
-    subtitle: e.degree,
+    subtitle: t('quality.degree'),
     logo: e.logo,
-    description: t('aru.description'),
+    description: t('quality.description'),
     bullets: [
-      t('aru.bullets.0'),
-      t('aru.bullets.1'),
-      t('aru.bullets.2'),
+      t('quality.bullets.0'),
+      t('quality.bullets.1'),
+      t('quality.bullets.2'),
     ],
     tags: e.tags,
     link: e.link,

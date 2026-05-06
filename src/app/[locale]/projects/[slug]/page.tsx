@@ -14,9 +14,8 @@ const SLUG_TO_KEY: Record<string, string> = {
   'vigil-24x7': 'vigil',
   'ley-clara': 'leyclara',
   'vivero-quilino': 'vivero',
-  'deep-learning-cnn-comparison': 'cnn',
+  'entity-management-system': 'entitymgmt',
   'personal-web-portfolio': 'portfolio',
-  'wikipedia-scraper': 'scraper',
   'university-library-system': 'library',
 }
 

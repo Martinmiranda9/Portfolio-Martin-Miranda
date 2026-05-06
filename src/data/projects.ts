@@ -29,7 +29,7 @@ export const projects: Project[] = [
   {
     title: 'Vigil 24x7',
     description: 'Intelligent management system for private security with automated digitization of operational processes.',
-    tags: ['.NET', 'Angular', 'SQL Server', 'Docker', 'OCR'],
+    tags: ['.NET', 'Angular', 'TypeScript', 'SQL Server', 'Docker', 'OCR'],
     link: 'https://github.com/Martinmiranda9/Sistema-de-Gestion-de-Vigiladores---V24X7',
     slug: 'vigil-24x7',
     caseStudy: {
@@ -55,7 +55,7 @@ export const projects: Project[] = [
   {
     title: 'Ley Clara',
     description: 'AI-powered legal platform that translates complex laws into plain language and provides advanced tools for legal professionals.',
-    tags: ['Angular', 'PrimeNG', 'Node.js', 'Express', 'PostgreSQL', 'MongoDB', 'Docker', 'RAG', 'LLMs'],
+    tags: ['Angular', 'TypeScript', 'PrimeNG', 'Node.js', 'Express', 'PostgreSQL', 'MongoDB', 'Docker', 'RAG', 'LLMs'],
     link: 'https://github.com/Martinmiranda9',
     slug: 'ley-clara',
     caseStudy: {
@@ -82,7 +82,7 @@ export const projects: Project[] = [
   {
     title: 'Vivero Quilino',
     description: 'Full-stack agricultural e-commerce platform for the digitalization and scalability of regional sales.',
-    tags: ['Node.js', 'Angular', 'PrimeNG', 'Tailwind CSS', 'MySQL'],
+    tags: ['Node.js', 'Angular', 'TypeScript', 'PrimeNG', 'Tailwind CSS', 'MySQL'],
     link: 'https://github.com/Martinmiranda9/Vivero-Quilino-',
     slug: 'vivero-quilino',
     caseStudy: {
@@ -106,41 +106,20 @@ export const projects: Project[] = [
     }
   },
   {
-    title: 'CNN Architecture Comparison',
-    description: 'Benchmarked three CNN architectures on 120K+ food images, proving EfficientNetB0 matches ResNet-50 while being 5.9x smaller.',
-    tags: ['Jupyter Notebook', 'Python', 'TensorFlow', 'Deep Learning'],
-    link: 'https://github.com/omorros/deep-learning-cnn-comparison',
-    slug: 'deep-learning-cnn-comparison',
+    title: 'Entity Management System',
+    description: 'Technical test: Full CRUD data management system built with .NET (C#) and SQL Server, focused on clean architecture and data integrity.',
+    tags: ['.NET', 'C#', 'TypeScript', 'Angular', 'SQL Server'],
+    link: 'https://github.com/Martinmiranda9/PruebaTecnica_',
+    slug: 'entity-management-system',
     caseStudy: {
-      challenge: 'Determining whether lightweight CNNs can match heavy architectures for domain-specific image classification while minimizing compute cost.',
-      approach: 'Benchmarked three CNN architectures on 120K+ food images. EfficientNetB0 matched ResNet-50\'s 99.75% accuracy while being 5.9x smaller and 35% faster to train.',
+      challenge: 'This project was developed as part of a technical test. The objective was to solve a business requirement within a limited timeframe, demonstrating proficiency in software architecture and data persistence management.',
+      approach: 'Designed a solid architecture for record management, prioritizing query efficiency and rigorous business logic validation. The system ensures fluid communication between the server and the database to guarantee data integrity at all times.',
       features: [
-        { title: '120K+ Image Pipeline', description: 'Merged three Kaggle sources with SHA-256 deduplication and stratified splitting.' },
-        { title: '99.75% Accuracy', description: 'EfficientNetB0 matched ResNet-50 via transfer learning on domain-specific data.' },
-        { title: '5.9x Model Compression', description: 'EfficientNetB0 achieved parity at 40 MB vs ResNet-50\'s 211 MB.' },
-        { title: 'Class-Weighted Training', description: 'Maintained >0.98 F1 scores even on minority classes with 113:1 imbalance.' }
+        { title: 'Full CRUD (ABM)', description: 'Complete implementation of Create, Read, Update, and Delete operations on business entities, enabling dynamic record management.' },
+        { title: 'Data Validation', description: 'Technical logic applied to ensure that input data complies with system formats and constraints before persistence.' },
+        { title: 'Database Integration', description: 'Optimized connection with the database engine for efficient data storage and retrieval.' },
+        { title: 'Clean Code', description: 'Development focused on readability and maintainability, following best practices required in corporate environments.' }
       ],
-      tables: [
-        {
-          title: 'Model Performance Comparison',
-          headers: ['Model', 'Test Accuracy', 'Parameters', 'Size', 'Training Time'],
-          rows: [
-            ['Custom CNN', '97.97%', '4.96M', '56.9 MB', '14.8h'],
-            ['EfficientNetB0', '99.75%', '4.07M', '40.0 MB', '6.7h'],
-            ['ResNet-50', '99.76%', '24.13M', '211.0 MB', '10.3h']
-          ]
-        },
-        {
-          title: 'Dataset Specifications',
-          headers: ['Property', 'Value'],
-          rows: [
-            ['Total Images', '120,842 (deduplicated)'],
-            ['Classes', '14 (Fruits & Vegetables)'],
-            ['Split (Train/Val/Test)', '84,582 / 18,119 / 18,141'],
-            ['Resolution', '224×224 RGB']
-          ]
-        }
-      ]
     }
   },
   {
@@ -184,27 +163,11 @@ export const projects: Project[] = [
       ]
     }
   },
-  {
-    title: 'Wikipedia Scraper',
-    description: 'Async crawler with 100 concurrent workers, O(1) URL deduplication, and a 20-second global deadline.',
-    tags: ['Python', 'Asyncio', 'Aiohttp', 'BeautifulSoup'],
-    link: 'https://github.com/omorros/wikipedia_scraper',
-    slug: 'wikipedia-scraper',
-    caseStudy: {
-      challenge: 'Efficiently crawling large-scale websites requires balancing speed with resource management under strict time constraints.',
-      approach: 'Built a high-concurrency async crawler with 100 workers, O(1) URL deduplication, and a global 20-second deadline using Python\'s asyncio and aiohttp.',
-      features: [
-        { title: '100 Concurrent Workers', description: 'Saturates network bandwidth and masks I/O latency with massive parallelism.' },
-        { title: '20s Deadline Enforcement', description: 'Global deadline propagation cancels all pending tasks exactly at the time limit.' },
-        { title: 'URL Deduplication', description: 'Hash set guarantees O(1) lookup time, preventing redundant processing and infinite loops.' },
-        { title: 'Non-Blocking Architecture', description: 'Full async event loop with robust link normalization and protocol handling.' }
-      ]
-    }
-  },
+
   {
     title: 'University Library System',
     description: 'Java MVC console app with inheritance hierarchies, polymorphic loan rules, and custom CSV persistence.',
-    tags: ['Java', 'OOP', 'JUnit', 'File I/O'],
+    tags: ['Java', 'TypeScript', 'Angular', 'OOP', 'JUnit', 'File I/O'],
     link: 'https://github.com/omorros/UniversityLibrarySystem',
     slug: 'university-library-system',
     caseStudy: {

@@ -14,6 +14,7 @@ import { Experience } from '@/components/page/Experience'
 import { TechStack } from '@/components/page/TechStack'
 import { SelectedWork } from '@/components/page/SelectedWork'
 import { Education } from '@/components/page/Education'
+import { Certifications } from '@/components/page/Certifications'
 import { ContactNow } from '@/components/page/ContactNow'
 import { Preloader } from '@/components/page/Preloader'
 
@@ -54,6 +55,9 @@ export default function Page() {
         <div id="education" className="scroll-mt-32">
           <Education />
         </div>
+
+        {/* Licenses & Certifications */}
+        <Certifications />
 
         {/* Contact (id="contact") */}
         <ContactNow />
