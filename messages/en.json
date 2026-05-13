@@ -7,7 +7,6 @@
     "email": "Email",
     "socials": "Socials",
     "viewAllProjects": "View all projects",
-    "cookingMore": "Cooking more...",
     "builtBy": "Built by"
   },
   "hero": {
@@ -41,7 +40,7 @@
         "role": "Full Stack Developer",
         "description": "Development of landing pages and web applications from scratch using HTML5, CSS3, JavaScript, and TypeScript. Angular (PrimeNG) and React up to the final deployment in production.",
         "bullets": [
-          "AI-First Development: Implementation of workflows using Claude Code.",
+          "AI-First Development: Orchestration of multi-agent workflows with Claude Code and integration of MCP servers. Token optimization, advanced management of functional capabilities (tools).",
           "Backend Development: Working with .NET and Node.js; design of hybrid persistence architectures using SQL Server, PostgreSQL, MySQL, and MongoDB.",
           "Frontend Development: Development of high-performance reactive interfaces on Angular (PrimeNG) and React.",
           "DevOps & Deployment: Containerization with Docker and orchestration of automated deployments via GitHub Actions (CI/CD)."
@@ -178,14 +177,6 @@
             }
           ]
         }
-      },
-      "portfolio": {
-        "title": "Personal Web Portfolio",
-        "description": "Single-page portfolio with custom full-page navigation, cursor-reactive gradients, and 95+ Lighthouse scores."
-      },
-      "library": {
-        "title": "University Library System",
-        "description": "Java MVC console app with inheritance hierarchies, polymorphic loan rules, and custom CSV persistence."
       }
     }
   },
@@ -247,7 +238,7 @@
     "title": "Contact",
     "subtitle": "Have a project in mind?",
     "description": "I'm available for new projects. Send me an email and let's talk.",
-    "getInTouch": "Get in touch."
+    "getInTouch": "Contact"
   },
   "caseStudy": {
     "allProjects": "All projects",

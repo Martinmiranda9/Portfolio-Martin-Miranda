@@ -71,14 +71,7 @@ export function SelectedWork() {
         })}
       </div>
 
-      {/* Cooking more - shimmer text */}
       <div className="mt-12 flex justify-center">
-        <p className="text-sm font-mono font-medium animate-shimmer bg-[linear-gradient(110deg,#939393,45%,#1e1e1e,55%,#939393)] dark:bg-[linear-gradient(110deg,#939393,45%,#e5e5e5,55%,#939393)] bg-[length:200%_100%] bg-clip-text text-transparent">
-          {tCommon('cookingMore')}
-        </p>
-      </div>
-
-      <div className="mt-4 flex justify-center">
         <a
           href={siteConfig.links.github}
           target="_blank"

@@ -7,7 +7,6 @@
     "email": "Email",
     "socials": "Redes",
     "viewAllProjects": "Ver todos los proyectos",
-    "cookingMore": "Cocinando más...",
     "builtBy": "Construido por"
   },
   "hero": {
@@ -41,7 +40,7 @@
         "role": "Desarrollador Full Stack",
         "description": "Desarrollo de landing pages y aplicaciones web from scratch con HTML5, CSS3, JavaScript y TypeScript. Angular (PrimeNG) y React hasta el despliegue final en producción.",
         "bullets": [
-          "Desarrollo AI-First: Implementación de flujos de trabajo con Claude Code.",
+          "Desarrollo AI-First: Orquestación de flujos multiagente con Claude Code e integración de servidores MCP. Optimización de tokens, gestión avanzada de capacidades funcionales (tools).",
           "Desarrollo Backend: Trabajo con .NET y Node.js; diseño de arquitecturas de persistencia híbridas utilizando SQL Server, PostgreSQL, MySQL y MongoDB.",
           "Desarrollo Frontend: Desarrollo de interfaces reactivas de alta performance sobre Angular (PrimeNG) y React.",
           "DevOps y Despliegues: Contenerización con Docker y orquestación de despliegues automatizados mediante GitHub Actions (CI/CD)."
@@ -178,14 +177,6 @@
             }
           ]
         }
-      },
-      "portfolio": {
-        "title": "Portfolio Web Personal",
-        "description": "Portfolio de una sola página con navegación personalizada de página completa, gradientes reactivos al cursor y puntuaciones Lighthouse 95+."
-      },
-      "library": {
-        "title": "Sistema de Biblioteca Universitaria",
-        "description": "App de consola Java MVC con jerarquías de herencia, reglas de préstamo polimórficas y persistencia CSV personalizada."
       }
     }
   },
@@ -247,7 +238,7 @@
     "title": "Contacto",
     "subtitle": "¿Tienes un proyecto en mente?",
     "description": "Estoy disponible para nuevos proyectos. Envíame un correo y hablemos.",
-    "getInTouch": "Ponte en contacto."
+    "getInTouch": "Contacto"
   },
   "caseStudy": {
     "allProjects": "Todos los proyectos",

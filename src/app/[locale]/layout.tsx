@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Inter, Playfair_Display, JetBrains_Mono, Caveat } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
@@ -51,6 +51,12 @@ const jsonLd = {
     addressLocality: 'Cambridge',
     addressCountry: 'UK',
   },
+}
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
 }
 
 export const metadata: Metadata = {
@@ -130,7 +136,7 @@ export default async function RootLayout({
       className={`${inter.variable} ${playfair.variable} ${jetbrains.variable} ${caveat.variable}`}
       suppressHydrationWarning
     >
-      <body className="font-sans antialiased bg-background text-foreground selection:bg-accent/20">
+      <body className="font-sans antialiased bg-background text-foreground selection:bg-accent/20 overflow-x-hidden">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

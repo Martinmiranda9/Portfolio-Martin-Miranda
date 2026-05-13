@@ -11,10 +11,9 @@ const YEARS: Record<string, string> = {
   'vivero-quilino': '2024',
   'deep-learning-cnn-comparison': '2024',
   'wikipedia-scraper': '2023',
-  'university-library-system': '2023',
 }
 
-const EXCLUDED_SLUGS = ['personal-web-portfolio'] // PRD §11 Q5 - cut
+const EXCLUDED_SLUGS: string[] = [] // PRD §11 Q5 - cut
 
 export function BuildLog() {
   const items: TimelineItem[] = projects

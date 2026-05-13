@@ -15,8 +15,6 @@ const SLUG_TO_KEY: Record<string, string> = {
   'ley-clara': 'leyclara',
   'vivero-quilino': 'vivero',
   'entity-management-system': 'entitymgmt',
-  'personal-web-portfolio': 'portfolio',
-  'university-library-system': 'library',
 }
 
 // Stagger animation variants

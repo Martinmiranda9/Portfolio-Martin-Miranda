@@ -10,13 +10,7 @@ import { cn } from '@/lib/utils'
 
 const GREETINGS = [
   'Hello',
-  'Bonjour',
   'Hola',
-  'Olá',
-  '你好',
-  'こんにちは',
-  'Hallo',
-  'Salut',
 ]
 
 const SESSION_KEY = 'preloader-shown'
@@ -90,8 +84,7 @@ export function Preloader() {
               exit={{ opacity: 0, y: -8, filter: 'blur(8px)' }}
               transition={{ duration: 0.32, ease: [0.16, 1, 0.3, 1] }}
               className={cn(
-                'font-display italic text-5xl md:text-7xl tracking-tight text-foreground',
-                GREETINGS[index] === 'こんにちは' && 'not-italic font-bold',
+                'font-display italic text-4xl md:text-7xl tracking-tight text-foreground'
               )}
             >
               {GREETINGS[index]}
