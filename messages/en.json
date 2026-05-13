@@ -12,7 +12,16 @@
   "hero": {
     "greeting": "Hi, I'm",
     "bio": "Building end-to-end software from",
-    "bio2": "My approach integrates strategic database design, clean architecture backend development, and reactive frontend user experience, all articulated through continuous integration and delivery (CI/CD) workflows."
+    "bio2_a": "My approach is ",
+    "bio2_b": " with an interest in ",
+    "bio2_c": ", all powered by ",
+    "bio2_d": ". I specialize in creating reactive user experiences, backed by a solid ",
+    "bio2_e": " under ",
+    "bio2_f": " and ",
+    "bio2_g": " workflows that guarantee quality in every ",
+    "bio2_deploy": "deployment",
+    "bio2_kw_ai": "AI",
+    "bio2_kw_clean": "clean architectures"
   },
   "aboutMe": {
     "title": "About Me",
@@ -78,16 +87,16 @@
               "description": "Optical Character Recognition system that transforms handwritten shift schedules into structured digital data, eliminating manual entry errors."
             },
             {
-              "title": "AI-First Workflow",
-              "description": "Intelligent processing pipeline that automates data extraction, validation, and integration into the management system."
+              "title": "Personnel Management & Control Dashboard",
+              "description": "Full CRUD for managing security guards, shift assignment, and a real-time dashboard with critical metrics: attendance, coverage, overtime, and payroll settlement."
             },
             {
-              "title": "Automated Dashboard",
-              "description": "Real-time visualization of critical metrics: attendance, shift coverage, overtime hours, and personnel allocation across sites."
+              "title": "Payroll Reports & Export",
+              "description": "Report generation with processed hours data to streamline accounting tasks and personnel salary settlement."
             },
             {
-              "title": "CI/CD Pipeline",
-              "description": "Containerized with Docker and automated deployments via GitHub Actions for continuous integration and delivery."
+              "title": "Client Summaries",
+              "description": "Detailed reports on hours covered at each company or protected location, enabling precise billing control per service."
             }
           ]
         }

@@ -12,7 +12,16 @@
   "hero": {
     "greeting": "Hola, soy",
     "bio": "Construyendo software de punta a punta desde",
-    "bio2": "Mi enfoque integra el diseño estratégico de bases de datos, el desarrollo de backend bajo arquitecturas limpias y una experiencia de usuario reactiva en frontend, todo articulado mediante flujos de integración y entrega continua (CI/CD)."
+    "bio2_a": "Mi enfoque es ",
+    "bio2_b": " con interés en ",
+    "bio2_c": ", todo potenciado con ",
+    "bio2_d": ". Me especializo en crear experiencias de usuario reactivas, respaldadas por un ",
+    "bio2_e": " sólido bajo ",
+    "bio2_f": " y flujos de ",
+    "bio2_g": " que garantizan calidad en cada ",
+    "bio2_deploy": "despliegue",
+    "bio2_kw_ai": "IA",
+    "bio2_kw_clean": "arquitecturas limpias"
   },
   "aboutMe": {
     "title": "Sobre mí",
@@ -78,16 +87,16 @@
               "description": "Sistema de Reconocimiento Óptico de Caracteres que transforma horarios de turnos escritos a mano en datos digitales estructurados, eliminando errores de entrada manual."
             },
             {
-              "title": "Flujo de Trabajo AI-First",
-              "description": "Pipeline de procesamiento inteligente que automatiza la extracción, validación e integración de datos en el sistema de gestión."
+              "title": "Gestión de Personal y Dashboard de Control",
+              "description": "CRUD integral para la administración de vigiladores, asignación de turnos y un dashboard en tiempo real con métricas críticas: asistencia, cobertura, horas extras y liquidación."
             },
             {
-              "title": "Dashboard Automatizado",
-              "description": "Visualización en tiempo real de métricas críticas: asistencia, cobertura de turnos, horas extras y asignación de personal en múltiples sitios."
+              "title": "Exportación y Reportes de Sueldos",
+              "description": "Generación de reportes con los datos de horas ya procesados para facilitar la tarea contable y la liquidación de haberes del personal."
             },
             {
-              "title": "Pipeline CI/CD",
-              "description": "Contenerizado con Docker y despliegues automatizados mediante GitHub Actions para integración y entrega continua."
+              "title": "Resúmenes por Cliente",
+              "description": "Informes detallados sobre las horas cubiertas en cada empresa o locación protegida, permitiendo un control preciso de la facturación por servicio."
             }
           ]
         }

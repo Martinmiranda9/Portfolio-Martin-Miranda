@@ -78,8 +78,21 @@ export function Hero() {
               <div className="prose prose-gray dark:prose-invert max-w-lg mb-6">
                 <p className="text-foreground-muted leading-relaxed text-sm md:text-base text-pretty">
                   {t('bio')}{' '}
-                  <span className="text-foreground font-medium">Córdoba, Argentina</span>.
-                  {' '}{t('bio2')}
+                  <span className="font-display font-medium text-foreground">Córdoba, Argentina</span>.
+                  {' '}{t('bio2_a')}
+                  <span className="font-display font-medium text-foreground">Full Stack</span>
+                  {t('bio2_b')}
+                  <span className="font-display font-medium text-foreground">Frontend</span>
+                  {t('bio2_c')}
+                  <span className="font-display font-medium text-foreground">{t('bio2_kw_ai')}</span>
+                  {t('bio2_d')}
+                  <span className="font-display font-medium text-foreground">Backend</span>
+                  {t('bio2_e')}
+                  <span className="font-display font-medium text-foreground">{t('bio2_kw_clean')}</span>
+                  {t('bio2_f')}
+                  <span className="font-display font-medium text-foreground">CI/CD</span>
+                  {t('bio2_g')}
+                  <span className="font-display font-medium text-foreground">{t('bio2_deploy')}</span>.
                 </p>
               </div>
 
