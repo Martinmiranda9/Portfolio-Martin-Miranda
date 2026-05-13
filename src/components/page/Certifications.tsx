@@ -102,12 +102,12 @@ function CertRow({ cert, index, t }: { cert: Certification; index: number; t: an
           </div>
           {/* Title + institution */}
           <div className="flex-1 min-w-0">
-            <div className="flex items-center justify-between gap-1">
-              <h3 className="text-base md:text-lg font-bold text-foreground group-hover:text-accent transition-colors truncate">
+            <div className="flex items-start justify-between gap-2">
+              <h3 className="text-base md:text-lg font-bold text-foreground group-hover:text-accent transition-colors leading-tight pr-2">
                 {t(`items.${cert.id}.name`)}
               </h3>
               {cert.date && (
-                <div className="flex items-center gap-1.5 text-[10px] md:text-xs font-medium text-foreground-faint bg-background-soft px-2 py-0.5 rounded-full w-fit shrink-0">
+                <div className="flex items-center gap-1.5 text-[10px] md:text-xs font-medium text-foreground-faint bg-background-soft px-2 py-0.5 rounded-full w-fit shrink-0 mt-0.5">
                   <Calendar size={10} /> {t(`items.${cert.id}.date`)}
                 </div>
               )}

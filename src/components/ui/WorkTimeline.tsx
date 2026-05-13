@@ -69,9 +69,9 @@ function TimelineRow({ item, index }: RowProps) {
             )}
           </div>
           <div className="flex-1 min-w-0">
-            <div className="flex items-center justify-between gap-1">
-              <div className="flex items-center gap-3">
-                <h3 className="text-base md:text-lg font-bold text-foreground group-hover:text-accent transition-colors truncate">
+            <div className="flex items-start justify-between gap-2">
+              <div className="flex flex-wrap items-center gap-2 pr-2">
+                <h3 className="text-base md:text-lg font-bold text-foreground group-hover:text-accent transition-colors leading-tight">
                   {item.title}
                 </h3>
                 {item.location && (
@@ -80,7 +80,7 @@ function TimelineRow({ item, index }: RowProps) {
                   </span>
                 )}
               </div>
-              <div className="flex items-center gap-1.5 text-[10px] md:text-xs font-medium text-foreground-faint bg-background-soft px-2 py-0.5 rounded-full w-fit shrink-0">
+              <div className="flex items-center gap-1.5 text-[10px] md:text-xs font-medium text-foreground-faint bg-background-soft px-2 py-0.5 rounded-full w-fit shrink-0 mt-0.5">
                 <Calendar size={10} /> {item.date}
               </div>
             </div>
