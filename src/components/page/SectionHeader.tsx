@@ -1,8 +1,6 @@
-// Section header - h2 with inline horizontal rule (Subhan pattern), optional mono caption below.
-
 interface SectionHeaderProps {
-  title: string
-  caption?: string
+  title: string;
+  caption?: string;
 }
 
 export function SectionHeader({ title, caption }: SectionHeaderProps) {
@@ -18,5 +16,5 @@ export function SectionHeader({ title, caption }: SectionHeaderProps) {
         </p>
       )}
     </div>
-  )
+  );
 }

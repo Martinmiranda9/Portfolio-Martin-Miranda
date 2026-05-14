@@ -1,12 +1,9 @@
-// Status pill: accent dot with pulse + ping ring.
-// Sage green from the Brutalist Skyline palette reads as universal "open".
-
 interface AvailablePillProps {
-  label?: string
+  label?: string;
 }
 
 export function AvailablePill({
-  label = 'Available for opportunities',
+  label = "Available for opportunities",
 }: AvailablePillProps) {
   return (
     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/5 border border-emerald-500/15 backdrop-blur-sm transition-all hover:bg-emerald-500/10">
@@ -18,5 +15,5 @@ export function AvailablePill({
         {label}
       </span>
     </div>
-  )
+  );
 }

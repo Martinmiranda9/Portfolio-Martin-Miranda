@@ -2,37 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ============================================================
-   Base palette mirrors syedsubhan.in:
-   - Light = white + gray-900 + blue-600 accent
-   - Dark  = pure black + #111 surfaces + white text + blue-500 accent
-   We use CSS vars (rgb triplets) so Tailwind alpha modifiers work,
-   AND we toggle via the `.dark` class on <html> (Tailwind native).
-   ============================================================ */
-
 :root {
-  /* Light mode — Brutalist Skyline palette */
-  --background: 247 255 247;              /* #F7FFF7 near-white mint */
-  --background-soft: 237 243 237;         /* slightly deeper mint for cards */
-  --foreground: 34 34 59;                 /* #22223B deep navy */
-  --foreground-muted: 74 78 105;          /* #4A4E69 muted indigo */
-  --foreground-faint: 154 140 152;        /* #9A8C98 dusty mauve */
-  --border: 201 203 160;                  /* #C9CBA0 sage green (subtle) */
-  --border-soft: 227 229 200;             /* lighter sage for subtle dividers */
-  --accent: 74 78 105;                    /* #4A4E69 muted indigo as accent */
+  
+  --background: 247 255 247;              
+  --background-soft: 237 243 237;         
+  --foreground: 34 34 59;                 
+  --foreground-muted: 74 78 105;          
+  --foreground-faint: 154 140 152;        
+  --border: 201 203 160;                  
+  --border-soft: 227 229 200;             
+  --accent: 74 78 105;                    
 
   --expo-out: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .dark {
   --background: 0 0 0;
-  --background-soft: 17 17 17;           /* #111 - Subhan's canonical dark card */
+  --background-soft: 17 17 17;           
   --foreground: 255 255 255;
-  --foreground-muted: 209 213 219;       /* gray-300 */
-  --foreground-faint: 156 163 175;       /* gray-400 */
+  --foreground-muted: 209 213 219;       
+  --foreground-faint: 156 163 175;       
   --border: 38 38 38;
   --border-soft: 23 23 23;
-  --accent: 59 130 246;                  /* blue-500 */
+  --accent: 59 130 246;                  
 }
 
 * { box-sizing: border-box; }
@@ -74,10 +66,6 @@ a { color: inherit; text-decoration: none; }
   border-radius: 4px;
 }
 
-/* ============================================================
-   View Transitions API - diamond clip-path reveal on theme swap.
-   Ported from syedsubhan.in.
-   ============================================================ */
 ::view-transition-group(root) {
   animation-duration: 0.7s;
   animation-timing-function: var(--expo-out);
@@ -106,22 +94,6 @@ a { color: inherit; text-decoration: none; }
   from { clip-path: polygon(171% 50%, 50% 171%, 50% 171%, 171% 50%); }
   to   { clip-path: polygon(171% 50%, 50% 171%, -50% 71%, 50% -71%); }
 }
-
-/* Magic UI Border Beam keyframes (kept for AskBlock) */
-@keyframes border-beam {
-  100% { offset-distance: 100%; }
-}
-.animate-border-beam {
-  animation: border-beam var(--duration, 15s) infinite linear;
-  animation-delay: var(--delay, 0s);
-}
-
-/* Shimmer text - used for "cooking more..." style accents (future) */
-@keyframes shimmer {
-  from { background-position: 200% 0; }
-  to   { background-position: -200% 0; }
-}
-.animate-shimmer { animation: shimmer 3s linear infinite; }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {

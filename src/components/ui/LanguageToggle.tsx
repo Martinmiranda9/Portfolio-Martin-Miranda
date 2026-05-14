@@ -1,48 +1,43 @@
-'use client'
+"use client";
 
-import { useEffect, useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import { usePathname, useRouter } from 'next/navigation'
-import { useLocale } from 'next-intl'
+import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { usePathname, useRouter } from "next/navigation";
+import { useLocale } from "next-intl";
 
 export function LanguageToggle() {
-  const [mounted, setMounted] = useState(false)
-  const locale = useLocale()
-  const pathname = usePathname()
-  const router = useRouter()
+  const [mounted, setMounted] = useState(false);
+  const locale = useLocale();
+  const pathname = usePathname();
+  const router = useRouter();
 
   useEffect(() => {
-    setMounted(true)
-  }, [])
+    setMounted(true);
+  }, []);
 
   const toggleLanguage = () => {
-    const newLocale = locale === 'es' ? 'en' : 'es'
-    
-    // Handle localePrefix: 'as-needed' - default locale may not have prefix in URL
-    let newPathname: string
-    if (pathname.startsWith(`/${locale}`)) {
-      // Current locale is in the pathname
-      newPathname = pathname.replace(`/${locale}`, `/${newLocale}`)
-    } else if (locale === 'es') {
-      // Current locale is 'es' (default) but not in pathname, so we're at root or subpath without locale
-      // Need to add /en prefix
-      newPathname = `/en${pathname}`
-    } else {
-      // Fallback: just replace what we can
-      newPathname = `/${newLocale}${pathname}`
-    }
-    
-    router.replace(newPathname, { scroll: false })
-  }
+    const newLocale = locale === "es" ? "en" : "es";
 
-  if (!mounted) return null
+    let newPathname: string;
+    if (pathname.startsWith(`/${locale}`)) {
+      newPathname = pathname.replace(`/${locale}`, `/${newLocale}`);
+    } else if (locale === "es") {
+      newPathname = `/en${pathname}`;
+    } else {
+      newPathname = `/${newLocale}${pathname}`;
+    }
+
+    router.replace(newPathname, { scroll: false });
+  };
+
+  if (!mounted) return null;
 
   return (
     <motion.button
       onClick={toggleLanguage}
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
-      aria-label={locale === 'es' ? 'Switch to English' : 'Cambiar a español'}
+      aria-label={locale === "es" ? "Switch to English" : "Cambiar a español"}
       className="fixed top-6 right-20 z-40 w-11 h-11 flex items-center justify-center rounded-full
                  bg-background-soft/80 backdrop-blur-md
                  border border-border
@@ -55,12 +50,12 @@ export function LanguageToggle() {
           initial={{ rotate: -90, scale: 0 }}
           animate={{ rotate: 0, scale: 1 }}
           exit={{ rotate: 90, scale: 0 }}
-          transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+          transition={{ type: "spring", stiffness: 300, damping: 20 }}
           className="absolute inline-flex"
         >
-          {locale === 'es' ? 'ES' : 'EN'}
+          {locale === "es" ? "ES" : "EN"}
         </motion.span>
       </AnimatePresence>
     </motion.button>
-  )
+  );
 }

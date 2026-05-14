@@ -1,30 +1,23 @@
-'use client'
+"use client";
 
-// Hero / About section - mirrors syedsubhan.in's hero structure exactly.
-// Profile pic right (md:order-last) draggable, available pill, name + verified badge,
-// typewriter role, bio paragraph. The hero IS the "about" section (id="about").
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
+import { siteConfig } from "@/lib/constants";
+import { Typewriter } from "@/components/ui/Typewriter";
+import { AvailablePill } from "@/components/ui/AvailablePill";
+import { Mail, Github, Linkedin } from "lucide-react";
 
-import Image from 'next/image'
-import { motion } from 'framer-motion'
-import { useTranslations } from 'next-intl'
-import { siteConfig } from '@/lib/constants'
-import { Typewriter } from '@/components/ui/Typewriter'
-import { AvailablePill } from '@/components/ui/AvailablePill'
-import { Mail, Github, Linkedin } from 'lucide-react'
-
-const ROLES = [
-  'Software Engineer',
-  'Full-Stack Developer',
-]
+const ROLES = ["Software Engineer", "Full-Stack Developer"];
 
 export function Hero() {
-  const t = useTranslations('hero')
-  const tCommon = useTranslations('common')
+  const t = useTranslations("hero");
+  const tCommon = useTranslations("common");
 
   return (
     <section id="about" className="mb-16 scroll-mt-32">
       <div className="flex flex-col md:flex-row justify-between items-start gap-8 md:gap-10">
-        {/* Profile pic - top on mobile, right on desktop */}
+        {}
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -32,8 +25,8 @@ export function Hero() {
           drag
           dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
           dragElastic={0.2}
-          whileHover={{ scale: 1.05, cursor: 'grab' }}
-          whileDrag={{ cursor: 'grabbing', scale: 1.1 }}
+          whileHover={{ scale: 1.05, cursor: "grab" }}
+          whileDrag={{ cursor: "grabbing", scale: 1.1 }}
           className="relative shrink-0 w-24 md:w-[180px] md:order-last z-20 touch-none"
         >
           <div className="aspect-square w-full rounded-2xl bg-background shadow-xl overflow-hidden pointer-events-none select-none">
@@ -48,7 +41,7 @@ export function Hero() {
           </div>
         </motion.div>
 
-        {/* Text */}
+        {}
         <div className="flex-1 flex flex-col justify-between self-stretch">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -58,14 +51,15 @@ export function Hero() {
           >
             <div>
               <div className="mb-4">
-                <AvailablePill label={tCommon('available')} />
+                <AvailablePill label={tCommon("available")} />
               </div>
 
               <h1 className="text-3xl md:text-4xl font-display font-medium text-foreground mb-2 leading-tight text-balance">
-                {t('greeting')} {siteConfig.name.split(' ').slice(0, 2).join(' ')}
+                {t("greeting")}{" "}
+                {siteConfig.name.split(" ").slice(0, 2).join(" ")}
               </h1>
 
-              {/* Typewriter role */}
+              {}
               <div className="mb-2 h-10 md:h-12 flex items-center">
                 <Typewriter
                   texts={ROLES}
@@ -77,43 +71,76 @@ export function Hero() {
 
               <div className="prose prose-gray dark:prose-invert max-w-lg mb-6">
                 <p className="text-foreground-muted leading-relaxed text-sm md:text-base text-pretty">
-                  {t('bio')}{' '}
-                  <span className="font-display font-medium text-foreground">Córdoba, Argentina</span>.
-                  {' '}{t('bio2_a')}
-                  <span className="font-display font-medium text-foreground">Full Stack</span>
-                  {t('bio2_b')}
-                  <span className="font-display font-medium text-foreground">Frontend</span>
-                  {t('bio2_c')}
-                  <span className="font-display font-medium text-foreground">{t('bio2_kw_ai')}</span>
-                  {t('bio2_d')}
-                  <span className="font-display font-medium text-foreground">Backend</span>
-                  {t('bio2_e')}
-                  <span className="font-display font-medium text-foreground">{t('bio2_kw_clean')}</span>
-                  {t('bio2_f')}
-                  <span className="font-display font-medium text-foreground">CI/CD</span>
-                  {t('bio2_g')}
-                  <span className="font-display font-medium text-foreground">{t('bio2_deploy')}</span>.
+                  {t("bio")}{" "}
+                  <span className="font-display font-medium text-foreground">
+                    Córdoba, Argentina
+                  </span>
+                  . {t("bio2_a")}
+                  <span className="font-display font-medium text-foreground">
+                    Full Stack
+                  </span>
+                  {t("bio2_b")}
+                  <span className="font-display font-medium text-foreground">
+                    Frontend
+                  </span>
+                  {t("bio2_c")}
+                  <span className="font-display font-medium text-foreground">
+                    {t("bio2_kw_ai")}
+                  </span>
+                  {t("bio2_d")}
+                  <span className="font-display font-medium text-foreground">
+                    Backend
+                  </span>
+                  {t("bio2_e")}
+                  <span className="font-display font-medium text-foreground">
+                    {t("bio2_kw_clean")}
+                  </span>
+                  {t("bio2_f")}
+                  <span className="font-display font-medium text-foreground">
+                    CI/CD
+                  </span>
+                  {t("bio2_g")}
+                  <span className="font-display font-medium text-foreground">
+                    {t("bio2_deploy")}
+                  </span>
+                  .
                 </p>
               </div>
 
-              {/* Social icon row */}
+              {}
               <div className="flex gap-4">
                 {[
-                  { href: `mailto:${siteConfig.links.email}`, label: 'Email', icon: 'mail' },
-                  { href: siteConfig.links.github, label: 'GitHub', icon: 'github' },
-                  { href: siteConfig.links.linkedin, label: 'LinkedIn', icon: 'linkedin' },
+                  {
+                    href: `mailto:${siteConfig.links.email}`,
+                    label: "Email",
+                    icon: "mail",
+                  },
+                  {
+                    href: siteConfig.links.github,
+                    label: "GitHub",
+                    icon: "github",
+                  },
+                  {
+                    href: siteConfig.links.linkedin,
+                    label: "LinkedIn",
+                    icon: "linkedin",
+                  },
                 ].map((l) => (
                   <a
                     key={l.label}
                     href={l.href}
-                    target={l.href.startsWith('http') ? '_blank' : undefined}
-                    rel={l.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                    target={l.href.startsWith("http") ? "_blank" : undefined}
+                    rel={
+                      l.href.startsWith("http")
+                        ? "noopener noreferrer"
+                        : undefined
+                    }
                     aria-label={l.label}
                     className="group w-12 h-12 rounded-full border border-border bg-background-soft flex items-center justify-center text-foreground-muted hover:bg-foreground hover:text-background hover:border-foreground transition-all duration-300"
                   >
-                    {l.icon === 'mail' && <Mail size={20} />}
-                    {l.icon === 'github' && <Github size={20} />}
-                    {l.icon === 'linkedin' && <Linkedin size={20} />}
+                    {l.icon === "mail" && <Mail size={20} />}
+                    {l.icon === "github" && <Github size={20} />}
+                    {l.icon === "linkedin" && <Linkedin size={20} />}
                   </a>
                 ))}
               </div>
@@ -122,5 +149,5 @@ export function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }
