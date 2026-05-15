@@ -13,7 +13,7 @@ export const techStackTopRow: Skill[] = [
     name: "JavaScript",
     iconUrl: "https://api.iconify.design/logos:javascript.svg",
   },
-  { name: "C++", iconUrl: "https://api.iconify.design/logos:c-plusplus.svg" },
+
   {
     name: "PostgreSQL",
     iconUrl: "https://api.iconify.design/logos:postgresql.svg",
@@ -70,9 +70,5 @@ export const techStackBottomRow: Skill[] = [
   {
     name: "OpenAI",
     iconUrl: "https://api.iconify.design/logos:openai-icon.svg",
-  },
-  {
-    name: "TensorFlow",
-    iconUrl: "https://api.iconify.design/logos:tensorflow.svg",
   },
 ];
