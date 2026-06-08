@@ -124,6 +124,10 @@ export const metadata: Metadata = {
   },
 };
 
+export function generateStaticParams() {
+  return [{ locale: "es" }, { locale: "en" }];
+}
+
 import { ThemeProvider } from "@/components/ui/ThemeProvider";
 
 export default async function RootLayout({

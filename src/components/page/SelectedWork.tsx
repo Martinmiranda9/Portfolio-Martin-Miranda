@@ -12,14 +12,14 @@ const FEATURED_SLUGS = [
   "vigil-24x7",
   "vivero-quilino",
   "ley-clara",
-  "entity-management-system",
+  "proyecto-lemanja",
 ];
 
 const SLUG_TO_KEY: Record<string, string> = {
   "vigil-24x7": "vigil",
   "ley-clara": "leyclara",
   "vivero-quilino": "vivero",
-  "entity-management-system": "entitymgmt",
+  "proyecto-lemanja": "lemanja",
 };
 
 export function SelectedWork() {
@@ -56,7 +56,8 @@ export function SelectedWork() {
               title={key ? t(`items.${key}.title`) : p.title}
               description={key ? t(`items.${key}.description`) : p.description}
               tags={p.tags}
-              githubUrl={p.link}
+              githubUrl={p.githubUrl || p.link}
+              link={p.liveUrl}
               imageUrl={media}
               videoUrl={p.caseStudy?.videoUrl}
               isDimmed={hoveredProject !== null && hoveredProject !== i}

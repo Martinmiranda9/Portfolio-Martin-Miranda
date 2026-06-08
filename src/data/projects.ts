@@ -4,6 +4,8 @@ export interface Project {
   tags: string[];
   link: string;
   slug?: string;
+  githubUrl?: string;
+  liveUrl?: string;
   caseStudy?: {
     challenge: string;
     approach: string;
@@ -188,38 +190,45 @@ export const projects: Project[] = [
     },
   },
   {
-    title: "Entity Management System",
+    title: "Proyecto Lemanjá",
     description:
-      "Technical test: Full CRUD data management system built with .NET (C#) and SQL Server, focused on clean architecture and data integrity.",
-    tags: [".NET", "C#", "TypeScript", "Angular", "SQL Server"],
-    link: "https://github.com/Martinmiranda9/PruebaTecnica_",
-    slug: "entity-management-system",
+      "An immersive and interactive visual experience inspired by the ocean and Lemanjá mythology, combining premium analog sea photography with fluid animations and refined editorial design.",
+    tags: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    link: "https://github.com/Martinmiranda9/Project-Lemanja",
+    slug: "proyecto-lemanja",
+    githubUrl: "https://github.com/Martinmiranda9/Project-Lemanja",
+    liveUrl: "https://project-lemanja.netlify.app/",
     caseStudy: {
       challenge:
-        "This project was developed as part of a technical test. The objective was to solve a business requirement within a limited timeframe, demonstrating proficiency in software architecture and data persistence management.",
+        "The challenge was to design a premium landing page that conveys calm, depth, and exclusivity through the sea. Photography had to be the absolute protagonist, requiring optimal loading performance without losing visual quality, and achieving transitions that simulate the movement of waves.",
       approach:
-        "Designed a solid architecture for record management, prioritizing query efficiency and rigorous business logic validation. The system ensures fluid communication between the server and the database to guarantee data integrity at all times.",
+        "Developed a highly aesthetic interface using Next.js and Framer Motion to achieve fluid animations that mimic the movement of water. I implemented an editorial layout with Playfair Display and Space Mono typography, optimizing heavy images using Next Image and utilizing advanced horizontal scroll techniques and progressive blur effects.",
       features: [
         {
-          title: "Full CRUD (ABM)",
+          title: "Immersive Experience",
           description:
-            "Complete implementation of Create, Read, Update, and Delete operations on business entities, enabling dynamic record management.",
+            "Use of blurred backdrops (backdrop-filter) and fluid transitions that simulate marine movement when scrolling.",
         },
         {
-          title: "Data Validation",
+          title: "Premium Editorial Design",
           description:
-            "Technical logic applied to ensure that input data complies with system formats and constraints before persistence.",
+            "Sophisticated typography and asymmetric layouts inspired by high-end art and photography magazines.",
         },
         {
-          title: "Database Integration",
+          title: "Interactive Gallery",
           description:
-            "Optimized connection with the database engine for efficient data storage and retrieval.",
+            "Interactive section dividing the view of the sea into three pillars: The Sea, The Current, and The Depth.",
         },
         {
-          title: "Clean Code",
+          title: "Dynamic Horizontal Scroll",
           description:
-            "Development focused on readability and maintainability, following best practices required in corporate environments.",
+            "Fluid horizontal navigation to explore different destinations and photographs from French Polynesia.",
         },
+      ],
+      thumbnail: "/images/projectlemanja/pl1.png",
+      screenshots: [
+        "/images/projectlemanja/pl1.png",
+        "/images/projectlemanja/pl2.png",
       ],
     },
   },

@@ -161,28 +161,28 @@
           ]
         }
       },
-      "entitymgmt": {
-        "title": "Sistema de Gestión de Entidades",
-        "description": "Prueba técnica: Sistema de gestión de datos (ABM) completo construido con .NET (C#) y SQL Server, enfocado en arquitectura limpia e integridad de datos.",
+      "lemanja": {
+        "title": "Proyecto Lemanjá",
+        "description": "Una experiencia visual e interactiva inspirada en el océano y la mitología de Lemanjá, que combina fotografía analógica premium del mar con animaciones fluidas y diseño editorial refinado.",
         "caseStudy": {
-          "challenge": "Este proyecto fue desarrollado como parte de una prueba técnica. El objetivo consistió en resolver un requerimiento de negocio en un tiempo limitado, demostrando solvencia en la arquitectura de software y el manejo de persistencia de datos.",
-          "approach": "Se diseñó una arquitectura sólida para la administración de registros, priorizando la eficiencia en las consultas y la validación rigurosa de la lógica de negocio. El sistema asegura una comunicación fluida entre el servidor y la base de datos para garantizar la integridad de la información en todo momento.",
+          "challenge": "El desafío consistió en diseñar una landing page premium que transmita la inmensidad, calma y misterio del océano. La fotografía debía ser la protagonista absoluta, lo que exigió una optimización rigurosa del rendimiento de carga de imágenes de alta resolución sin sacrificar su fidelidad visual, logrando además transiciones fluidas que simulen el movimiento de las olas.",
+          "approach": "Desarrollé una interfaz altamente estética utilizando Next.js y Framer Motion para lograr animaciones fluidas que simulan el vaivén del agua. Implementé un diseño editorial con tipografía Playfair Display y Space Mono, optimizando imágenes pesadas mediante Next Image y utilizando técnicas avanzadas de scroll horizontal y efectos de desenfoque progresivos.",
           "features": [
             {
-              "title": "CRUD (ABM) Completo",
-              "description": "Implementación total de las operaciones de Altas, Bajas y Modificaciones sobre entidades de negocio, permitiendo una gestión dinámica de los registros."
+              "title": "Experiencia Visual Inmersiva",
+              "description": "Uso de fondos desenfocados (backdrop-filter) y transiciones fluidas que simulan el movimiento marino al hacer scroll."
             },
             {
-              "title": "Validación de Datos",
-              "description": "Aplicación de lógica técnica para asegurar que la información ingresada cumpla con los formatos y restricciones del sistema antes de su persistencia."
+              "title": "Diseño Editorial Premium",
+              "description": "Tipografía sofisticada y layouts asimétricos inspirados en revistas de arte y fotografía de alta gama."
             },
             {
-              "title": "Integración de Base de Datos",
-              "description": "Conexión optimizada con el motor de base de datos para el almacenamiento y recuperación eficiente de la información."
+              "title": "Galería Interactiva",
+              "description": "Sección interactiva que divide la mirada del mar en tres pilares: El Mar, La Corriente y La Profundidad."
             },
             {
-              "title": "Código Limpio",
-              "description": "Desarrollo enfocado en la legibilidad y mantenibilidad, siguiendo las mejores prácticas requeridas en entornos corporativos."
+              "title": "Scroll Horizontal Dinámico",
+              "description": "Navegación horizontal fluida para explorar diferentes destinos y fotografías de la Polinesia Francesa."
             }
           ]
         }
@@ -255,6 +255,7 @@
     "backToHome": "Volver al inicio",
     "notFound": "Proyecto no encontrado.",
     "code": "Código",
+    "live": "Visitar Sitio",
     "challenge": "Desafío",
     "approach": "Acercarse",
     "whatItDoes": "Lo que hace",
