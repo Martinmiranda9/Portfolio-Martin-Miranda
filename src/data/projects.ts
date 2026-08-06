@@ -229,6 +229,8 @@ export const projects: Project[] = [
       screenshots: [
         "/images/projectlemanja/pl1.png",
         "/images/projectlemanja/pl2.png",
+        "/images/projectlemanja/pl3.png",
+        "/images/projectlemanja/pl4.png",
       ],
     },
   },
